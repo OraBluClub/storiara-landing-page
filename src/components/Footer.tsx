@@ -11,6 +11,7 @@ import {
 } from 'lucide-react'
 import Link from 'next/link'
 import Image from 'next/image'
+import { getAssetPath } from '@/lib/utils'
 
 const Footer = () => {
   const footerLinks = {
@@ -65,7 +66,7 @@ const Footer = () => {
             >
               <div className="flex items-center mb-6">
                             <Image
-              src="/visionara-landing-page/assets/visionara-dark.svg"
+              src={getAssetPath("/assets/visionara-dark.svg")}
               alt="Logo"
               width={48}
               height={48}

@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/button'
 import { Menu, X, PenTool } from 'lucide-react'
 import Link from 'next/link'
 import Image from 'next/image'
+import { getAssetPath } from '@/lib/utils'
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -63,7 +64,7 @@ const Navigation = () => {
           >
             <Link href="/" className="flex items-center">
               <Image
-                src="/visionara-landing-page/assets/visionara-dark.svg"
+                src={getAssetPath("/assets/visionara-dark.svg")}
                 alt="Logo"
                 width={200}
                 height={40}
