@@ -63,7 +63,7 @@ const Navigation = () => {
           >
             <Link href="/" className="flex items-center">
               <Image
-                src="/assets/visionara-dark.svg"
+                src="/visionara-landing-page/assets/visionara-dark.svg"
                 alt="Logo"
                 width={200}
                 height={40}

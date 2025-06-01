@@ -6,25 +6,25 @@ import Image from 'next/image'
 
 const Team = () => {
   const teamMembers = [
-    {
+        {
       name: "Nick Harty",
       role: "Technical Lead",
       bio: "Full-stack engineer and technical architect leading the development of innovative film production tools. Passionate about bridging technology and creativity.",
-      image: "/profiles/nickharty.jpeg",
+      image: "/visionara-landing-page/profiles/nickharty.jpeg",
       linkedin: "https://www.linkedin.com/in/nicksheaharty/"
     },
     {
-      name: "Spencer Kaufman",
+      name: "Spencer Kaufman", 
       role: "CRSO, BizDev",
       bio: "Chief Revenue & Strategy Officer driving business development and strategic partnerships. Expert in scaling creative technology companies.",
-      image: "/profiles/spencer.jpeg",
+      image: "/visionara-landing-page/profiles/spencer.jpeg",
       linkedin: "https://www.linkedin.com/in/spencerkaufman720/"
     },
     {
       name: "Charles Hirschhorn",
-      role: "CFO",
+      role: "CFO", 
       bio: "Chief Financial Officer with extensive experience in media and technology companies. Ensures financial strategy aligns with our mission to revolutionize film production.",
-      image: "/profiles/charles.jpeg",
+      image: "/visionara-landing-page/profiles/charles.jpeg",
       linkedin: "https://www.linkedin.com/in/charlie-hirschhorn/"
     }
   ]

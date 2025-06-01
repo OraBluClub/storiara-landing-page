@@ -64,13 +64,13 @@ const Footer = () => {
               viewport={{ once: true }}
             >
               <div className="flex items-center mb-6">
-                <Image
-                  src="/assets/visionara-dark.svg"
-                  alt="Logo"
-                  width={48}
-                  height={48}
-                  className="mr-4"
-                />
+                            <Image
+              src="/visionara-landing-page/assets/visionara-dark.svg"
+              alt="Logo"
+              width={48}
+              height={48}
+              className="mr-4"
+            />
                 <div className="flex items-center space-x-2">
                   <Film className="h-6 w-6 text-blue-400" />
                   <Sparkles className="h-5 w-5 text-blue-300" />
