@@ -5,12 +5,12 @@ import {
   Linkedin, 
   Instagram, 
   Youtube,
-  ArrowRight,
   Film,
   Sparkles,
   PenTool
 } from 'lucide-react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const Footer = () => {
   const footerLinks = {
@@ -64,10 +64,12 @@ const Footer = () => {
               viewport={{ once: true }}
             >
               <div className="flex items-center mb-6">
-                <img
+                <Image
                   src="/assets/visionara-dark.svg"
                   alt="Logo"
-                  className="h-12 w-auto mr-4"
+                  width={48}
+                  height={48}
+                  className="mr-4"
                 />
                 <div className="flex items-center space-x-2">
                   <Film className="h-6 w-6 text-blue-400" />

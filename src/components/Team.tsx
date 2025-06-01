@@ -1,7 +1,8 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Linkedin, ExternalLink } from 'lucide-react'
+import { Linkedin } from 'lucide-react'
+import Image from 'next/image'
 
 const Team = () => {
   const teamMembers = [
@@ -71,9 +72,11 @@ const Team = () => {
                 transition={{ duration: 0.3 }}
                 className="relative mb-6"
               >
-                <img
+                <Image
                   src={member.image}
                   alt={member.name}
+                  width={128}
+                  height={128}
                   className="w-32 h-32 rounded-full mx-auto object-cover border-2 border-blue-600/30 group-hover:border-blue-500/50 transition-colors duration-300"
                 />
                 <div className="absolute inset-0 w-32 h-32 rounded-full mx-auto bg-blue-600/10 group-hover:bg-blue-500/20 transition-colors duration-300" />

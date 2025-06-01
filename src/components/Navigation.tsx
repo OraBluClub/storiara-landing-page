@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 import { Button } from '@/components/ui/button'
 import { Menu, X, PenTool } from 'lucide-react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -61,9 +62,11 @@ const Navigation = () => {
             className="flex-shrink-0"
           >
             <Link href="/" className="flex items-center">
-              <img
+              <Image
                 src="/assets/visionara-dark.svg"
                 alt="Logo"
+                width={200}
+                height={40}
                 className="h-10 w-auto hover:scale-105 transition-transform duration-300 filter drop-shadow-lg"
               />
             </Link>

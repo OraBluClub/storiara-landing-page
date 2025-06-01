@@ -4,6 +4,8 @@
   "private": true,
   "homepage": "https://github.com/orabluclub/visionara-landing-page",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d out",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
