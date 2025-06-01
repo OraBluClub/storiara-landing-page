@@ -1,26 +1,129 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: 230 100% 2.5%; /* Dark: #00020D */
+    --foreground: 230 100% 97.5%; /* Dark: #F2F4FF */
+
+    --card: 230 20% 8%;
+    --card-foreground: 230 100% 97.5%;
+
+    --popover: 230 20% 8%;
+    --popover-foreground: 230 100% 97.5%;
+
+    --primary: 231 76% 58.2%; /* #455FE5 */
+    --primary-dark: 231 76% 40%; /* Darker shade of primary for gradient */
+    --primary-foreground: 230 100% 97.5%; /* #F2F4FF */
+
+    --secondary: 230 20% 15%;
+    --secondary-foreground: 230 100% 97.5%;
+
+    --muted: 230 20% 12%;
+    --muted-foreground: 230 20% 65%;
+
+    --accent: 231 76% 65%; /* Lighter primary */
+    --accent-foreground: 230 100% 97.5%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 230 20% 12%;
+    --input: 230 20% 15%;
+    --ring: 231 76% 58.2%;
+
+    --radius: 0.5rem;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer base {
+  * {
+    border-color: hsl(var(--border));
+  }
+  
+  html {
+    background-color: #000000;
+  }
+  
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    background: linear-gradient(135deg, hsl(var(--background)) 0%, hsl(230 30% 5%) 100%);
+    min-height: 100vh;
+  }
+
+  /* Ultra-discrete scrollbar - practically invisible */
+  ::-webkit-scrollbar {
+    width: 2px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgba(69, 95, 229, 0.1);
+    border-radius: 1px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(69, 95, 229, 0.2);
+  }
+
+  /* Firefox scrollbar */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(69, 95, 229, 0.1) transparent;
+  }
+
+  /* Perspective and animation utilities */
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+  
+  .perspective-2000 {
+    perspective: 2000px;
+  }
+  
+  .transform-style-3d {
+    transform-style: preserve-3d;
+  }
+  
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+
+  /* Gradient text */
+  .gradient-text {
+    background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--accent)) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Glow effects */
+  .glow-primary {
+    box-shadow: 0 0 20px hsl(var(--primary) / 0.3);
+  }
+  
+  .glow-primary-strong {
+    box-shadow: 0 0 40px hsl(var(--primary) / 0.5);
+  }
+
+  /* Film grain overlay */
+  .film-grain::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+      radial-gradient(circle at 20% 50%, transparent 20%, rgba(255,255,255,0.01) 21%, rgba(255,255,255,0.01) 34%, transparent 35%, transparent),
+      linear-gradient(0deg, transparent 24%, rgba(255,255,255,0.005) 25%, rgba(255,255,255,0.005) 26%, transparent 27%, transparent 74%, rgba(255,255,255,0.005) 75%, rgba(255,255,255,0.005) 76%, transparent 77%, transparent);
+    pointer-events: none;
+    z-index: 1;
+  }
 }
