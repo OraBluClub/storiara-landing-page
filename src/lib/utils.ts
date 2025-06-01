@@ -6,7 +6,9 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export function getAssetPath(path: string): string {
-  const isProd = process.env.NODE_ENV === 'production';
-  const basePath = isProd ? '/visionara-landing-page' : '';
+  // Check if we're running on GitHub Pages by looking at the hostname
+
+  
+  const basePath = '';
   return `${basePath}${path}`;
 } 

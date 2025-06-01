@@ -52,7 +52,7 @@ const Team = () => {
             </span>
           </h2>
           <p className="text-xl text-slate-400 max-w-3xl mx-auto">
-            The visionaries behind the platform. Our team combines deep technical expertise with industry experience 
+            The storytellers behind the platform. Our team combines deep technical expertise with industry experience 
             to create tools that truly understand the needs of modern filmmakers.
           </p>
         </motion.div>

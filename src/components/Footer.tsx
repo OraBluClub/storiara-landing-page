@@ -65,13 +65,13 @@ const Footer = () => {
               viewport={{ once: true }}
             >
               <div className="flex items-center mb-6">
-                            <Image
-              src={getAssetPath("/assets/visionara-dark.svg")}
-              alt="Logo"
-              width={48}
-              height={48}
-              className="mr-4"
-            />
+                                            <Image
+                  src={getAssetPath("/assets/visionara-dark.svg")}
+                  alt="Logo"
+                  width={240}
+                  height={48}
+                  className="mr-4 h-12 w-auto"
+                />
                 <div className="flex items-center space-x-2">
                   <Film className="h-6 w-6 text-blue-400" />
                   <Sparkles className="h-5 w-5 text-blue-300" />
@@ -181,7 +181,7 @@ const Footer = () => {
             viewport={{ once: true }}
             className="text-slate-500 text-sm mb-4 md:mb-0"
           >
-            © {new Date().getFullYear()} Visionara. All rights reserved.
+            © {new Date().getFullYear()} Storiara. All rights reserved.
           </motion.div>
 
           {/* Social Links */}

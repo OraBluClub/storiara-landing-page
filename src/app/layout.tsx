@@ -13,21 +13,21 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Visionara | Your Script, Your Story - Complete Film Production Platform",
-  description: "Transform your film production workflow with Visionara. From script analysis to cast management, scheduling to shotlists - professional tools for creators who demand excellence.",
+  title: "Storiara | Your Script, Your Story - Complete Film Production Platform",
+  description: "Transform your film production workflow with Storiara. From script analysis to cast management, scheduling to shotlists - professional tools for creators who demand excellence.",
   keywords: "film production, script analysis, cast management, production scheduling, shotlist development, filmmaking tools, movie production software",
-  authors: [{ name: "Visionara" }],
-  creator: "Visionara",
-  publisher: "Visionara",
+  authors: [{ name: "Storiara" }],
+  creator: "Storiara",
+  publisher: "Storiara",
   openGraph: {
-    title: "Visionara | Your Script, Your Story",
+    title: "Storiara | Your Script, Your Story",
     description: "Complete film production platform for professional creators",
     type: "website",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Visionara | Your Script, Your Story",
+    title: "Storiara | Your Script, Your Story",
     description: "Complete film production platform for professional creators",
   },
 };

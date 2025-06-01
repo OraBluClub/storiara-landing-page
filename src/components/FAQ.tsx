@@ -152,7 +152,7 @@ const FAQ = () => {
                 whileTap={{ scale: 0.95 }}
                 className="bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-700 hover:to-blue-900 text-white px-6 py-3 rounded-lg font-semibold shadow-lg shadow-blue-600/30 transition-all duration-300"
               >
-                <Link href="mailto:support@visionara.com" className="flex items-center justify-center">
+                <Link href="mailto:support@storiara.com" className="flex items-center justify-center">
                   <Mail className="mr-2 h-5 w-5" />
                   Contact Support
                 </Link>
