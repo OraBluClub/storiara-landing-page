@@ -91,7 +91,7 @@ const Navigation = () => {
               asChild
               className="ml-4 bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-700 hover:to-blue-900 text-white border-0 shadow-lg shadow-blue-600/30 text-base px-6 py-3"
             >
-              <Link href="https://visionara.orabluclub.com" className="flex items-center">
+              <Link href="https://app.storiara.com" className="flex items-center">
                 <PenTool className="mr-2 h-5 w-5" />
                 Tell Your Story
               </Link>
@@ -136,7 +136,7 @@ const Navigation = () => {
                   asChild
                   className="w-full bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-700 hover:to-blue-900 text-white border-0 shadow-lg shadow-blue-600/30 text-base py-3"
                 >
-                  <Link href="https://visionara.orabluclub.com" className="flex items-center justify-center">
+                  <Link href="https://app.storiara.com" className="flex items-center justify-center">
                     <PenTool className="mr-2 h-5 w-5" />
                     Tell Your Story
                   </Link>

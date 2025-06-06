@@ -105,7 +105,7 @@ const Hero = () => {
             asChild
             className="group relative overflow-hidden bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-700 hover:to-blue-900 text-white border-0 shadow-lg shadow-blue-600/30"
           >
-            <Link href="https://visionara.orabluclub.com" className="flex items-center">
+            <Link href="https://app.storiara.com" className="flex items-center">
               <motion.div
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}

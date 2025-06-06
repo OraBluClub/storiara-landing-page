@@ -166,7 +166,7 @@ const Platform = () => {
                 whileTap={{ scale: 0.95 }}
                 className="bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-700 hover:to-blue-900 text-white px-8 py-4 rounded-lg font-semibold shadow-lg shadow-blue-600/30 transition-all duration-300"
               >
-                <Link href="https://visionara.orabluclub.com" className="flex items-center">
+                <Link href="https://app.storiara.com" className="flex items-center">
                   Experience the Platform
                 </Link>
               </motion.button>

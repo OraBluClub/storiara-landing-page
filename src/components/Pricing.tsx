@@ -187,7 +187,7 @@ const Pricing = () => {
                 size="lg"
                 asChild
               >
-                <Link href="https://visionara.orabluclub.com">
+                <Link href="https://app.storiara.com">
                   {plan.price === "Custom" ? "Contact Sales" : "Get Started"}
                 </Link>
               </Button>
@@ -261,7 +261,7 @@ const Pricing = () => {
                 whileTap={{ scale: 0.95 }}
                 className="bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-700 hover:to-blue-900 text-white px-8 py-3 rounded-lg font-semibold shadow-lg shadow-blue-600/30 transition-all duration-300"
               >
-                <Link href="https://visionara.orabluclub.com" className="flex items-center justify-center">
+                <Link href="https://app.storiara.com" className="flex items-center justify-center">
                   <Zap className="mr-2 h-5 w-5" />
                   Start Free Trial
                 </Link>

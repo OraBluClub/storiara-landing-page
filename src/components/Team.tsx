@@ -23,7 +23,7 @@ const Team = () => {
     },
     {
       name: "Charles Hirschhorn",
-      role: "CFO", 
+      role: "CFO, BizDev", 
       bio: "Chief Financial Officer with extensive experience in media and technology companies. Ensures financial strategy aligns with our mission to revolutionize film production.",
       image: "/profiles/charles.jpeg",
       linkedin: "https://www.linkedin.com/in/charlie-hirschhorn/"

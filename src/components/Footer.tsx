@@ -92,7 +92,7 @@ const Footer = () => {
                 className="inline-block"
               >
                 <Link
-                  href="https://visionara.orabluclub.com"
+                  href="https://app.storiara.com"
                   className="inline-flex items-center bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-700 hover:to-blue-900 text-white px-6 py-3 rounded-lg font-semibold shadow-lg shadow-blue-600/30 transition-all duration-300 text-base"
                 >
                   <PenTool className="mr-2 h-5 w-5" />
