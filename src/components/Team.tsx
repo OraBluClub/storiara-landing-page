@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 import { Linkedin } from 'lucide-react'
 import Image from 'next/image'
+import { getAssetPath } from '@/lib/utils'
 
 const Team = () => {
   const teamMembers = [
@@ -10,21 +11,21 @@ const Team = () => {
       name: "Nick Harty",
       role: "Technical Lead",
       bio: "Full-stack engineer and technical architect leading the development of innovative film production tools. Passionate about bridging technology and creativity.",
-      image: "/visionara-landing-page/profiles/nickharty.jpeg",
+      image: "/profiles/nickharty.jpeg",
       linkedin: "https://www.linkedin.com/in/nicksheaharty/"
     },
     {
       name: "Spencer Kaufman", 
       role: "CRSO, BizDev",
       bio: "Chief Revenue & Strategy Officer driving business development and strategic partnerships. Expert in scaling creative technology companies.",
-      image: "/visionara-landing-page/profiles/spencer.jpeg",
+      image: "/profiles/spencer.jpeg",
       linkedin: "https://www.linkedin.com/in/spencerkaufman720/"
     },
     {
       name: "Charles Hirschhorn",
       role: "CFO", 
       bio: "Chief Financial Officer with extensive experience in media and technology companies. Ensures financial strategy aligns with our mission to revolutionize film production.",
-      image: "/visionara-landing-page/profiles/charles.jpeg",
+      image: "/profiles/charles.jpeg",
       linkedin: "https://www.linkedin.com/in/charlie-hirschhorn/"
     }
   ]
@@ -51,7 +52,7 @@ const Team = () => {
             </span>
           </h2>
           <p className="text-xl text-slate-400 max-w-3xl mx-auto">
-            The visionaries behind the platform. Our team combines deep technical expertise with industry experience 
+            The storytellers behind the platform. Our team combines deep technical expertise with industry experience 
             to create tools that truly understand the needs of modern filmmakers.
           </p>
         </motion.div>
@@ -73,7 +74,7 @@ const Team = () => {
                 className="relative mb-6"
               >
                 <Image
-                  src={member.image}
+                  src={getAssetPath(member.image)}
                   alt={member.name}
                   width={128}
                   height={128}

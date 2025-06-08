@@ -1,6 +1,95 @@
-# Visionara Marketing Site
+# Storiara Landing Page
 
-A stunning, cinematic marketing landing page for Visionara - the AI-powered film production platform.
+A modern, responsive landing page for Storiara built with Next.js, TypeScript, and Tailwind CSS.
+
+## Features
+
+- 🎬 Film production focused design
+- 🌙 Dark mysterious theme with blue gradients
+- 📱 Fully responsive design
+- ⚡ Optimized for performance
+- 🚀 Deployed on GitHub Pages
+
+## Development
+
+### Prerequisites
+
+- Node.js 18+ 
+- npm or yarn
+
+### Local Development
+
+1. Install dependencies:
+```bash
+npm install
+```
+
+2. Start the development server:
+```bash
+npm run dev
+```
+
+3. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+The site will automatically work locally without any base path configuration.
+
+### Building for Production
+
+```bash
+npm run build
+```
+
+This creates an optimized production build in the `out` directory with the correct base path for GitHub Pages.
+
+### Deployment to GitHub Pages
+
+```bash
+npm run deploy
+```
+
+This will:
+1. Build the project for production
+2. Deploy to GitHub Pages
+3. Preserve the `.nojekyll` file for proper routing
+
+The site will be available at: https://orabluclub.github.io/storiara-landing-page/
+
+## Project Structure
+
+```
+src/
+├── app/                 # Next.js app router
+├── components/          # React components
+│   ├── ui/             # Reusable UI components
+│   ├── Navigation.tsx  # Header navigation
+│   ├── Hero.tsx        # Hero section
+│   ├── Features.tsx    # Features showcase
+│   ├── Platform.tsx    # Platform capabilities
+│   ├── Team.tsx        # Team members
+│   ├── Pricing.tsx     # Pricing plans
+│   ├── FAQ.tsx         # Frequently asked questions
+│   └── Footer.tsx      # Footer
+└── lib/                # Utility functions
+    └── utils.ts        # Helper functions including asset path handling
+```
+
+## Configuration
+
+The project automatically handles different environments:
+
+- **Development**: No base path, assets served from root
+- **Production**: Base path `/storiara-landing-page` for GitHub Pages
+
+This is handled automatically through the `getAssetPath` utility function and Next.js configuration.
+
+## Technologies
+
+- **Framework**: Next.js 15
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Animations**: Framer Motion
+- **Icons**: Lucide React
+- **Deployment**: GitHub Pages
 
 ## 🎬 Features
 
@@ -136,7 +225,7 @@ Customize Framer Motion animations in individual components or update the global
 
 ## 📄 License
 
-This project is proprietary to Visionara. All rights reserved.
+This project is proprietary to Storiara. All rights reserved.
 
 ## 🤝 Contributing
 
@@ -151,4 +240,4 @@ For questions or support, contact the development team:
 
 ---
 
-**Visionara** - Revolutionizing film production with AI-powered tools.
+**Storiara** - Revolutionizing film production with AI-powered tools.

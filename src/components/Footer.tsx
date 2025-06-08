@@ -11,6 +11,7 @@ import {
 } from 'lucide-react'
 import Link from 'next/link'
 import Image from 'next/image'
+import { getAssetPath } from '@/lib/utils'
 
 const Footer = () => {
   const footerLinks = {
@@ -64,13 +65,13 @@ const Footer = () => {
               viewport={{ once: true }}
             >
               <div className="flex items-center mb-6">
-                            <Image
-              src="/visionara-landing-page/assets/visionara-dark.svg"
-              alt="Logo"
-              width={48}
-              height={48}
-              className="mr-4"
-            />
+                                            <Image
+                  src={getAssetPath("/assets/visionara-dark.svg")}
+                  alt="Logo"
+                  width={240}
+                  height={48}
+                  className="mr-4 h-12 w-auto"
+                />
                 <div className="flex items-center space-x-2">
                   <Film className="h-6 w-6 text-blue-400" />
                   <Sparkles className="h-5 w-5 text-blue-300" />
@@ -91,7 +92,7 @@ const Footer = () => {
                 className="inline-block"
               >
                 <Link
-                  href="https://visionara.orabluclub.com"
+                  href="https://app.storiara.com"
                   className="inline-flex items-center bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-700 hover:to-blue-900 text-white px-6 py-3 rounded-lg font-semibold shadow-lg shadow-blue-600/30 transition-all duration-300 text-base"
                 >
                   <PenTool className="mr-2 h-5 w-5" />
@@ -180,7 +181,7 @@ const Footer = () => {
             viewport={{ once: true }}
             className="text-slate-500 text-sm mb-4 md:mb-0"
           >
-            © {new Date().getFullYear()} Visionara. All rights reserved.
+            © {new Date().getFullYear()} Storiara. All rights reserved.
           </motion.div>
 
           {/* Social Links */}

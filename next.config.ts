@@ -1,10 +1,12 @@
 import type { NextConfig } from "next";
 
+const isProd = process.env.NODE_ENV === 'production';
+
 const nextConfig: NextConfig = {
   output: 'export',
   trailingSlash: true,
-  basePath: '/visionara-landing-page',
-  assetPrefix: '/visionara-landing-page/',
+  basePath: '',
+  assetPrefix: '',
   images: {
     unoptimized: true
   }
