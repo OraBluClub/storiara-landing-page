@@ -71,8 +71,8 @@ const Pricing = () => {
   ]
 
   const comparisonFeatures = [
-    { feature: "Story Creation", free: "1 Story", pro: "Unlimited", enterprise: "Unlimited" },
-    { feature: "AI Calls / Month", free: "10", pro: "1,000", enterprise: "Custom" },
+    { feature: "Story Creation", free: "3 Stories", pro: "Unlimited", enterprise: "Unlimited" },
+    { feature: "AI Calls / Month", free: "100", pro: "1,000", enterprise: "Custom" },
     { feature: "AI Image & Video Generation", free: "✗", pro: <Check className="h-5 w-5 text-primary mx-auto" />, enterprise: <Check className="h-5 w-5 text-primary mx-auto" /> },
     { feature: "Advanced Budgeting", free: "✗", pro: <Check className="h-5 w-5 text-primary mx-auto" />, enterprise: <Check className="h-5 w-5 text-primary mx-auto" /> },
     { feature: "Team Collaboration", free: "Limited", pro: "Full", enterprise: "Custom" },
