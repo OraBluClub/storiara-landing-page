@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Check, Star, Zap, ShieldCheck, Film, Bot, Wand2, Camera, Clapperboard, TrendingUp } from 'lucide-react'
+import { Check, TrendingUp } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 

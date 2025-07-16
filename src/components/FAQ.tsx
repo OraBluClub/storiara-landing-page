@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { useState } from 'react'
-import { ChevronDown, HelpCircle, Mail, MessageCircle, Sparkle, Sparkles } from 'lucide-react'
+import { ChevronDown, Mail, MessageCircle } from 'lucide-react'
 import Link from 'next/link'
 
 const FAQ = () => {

@@ -2,13 +2,8 @@
 
 import { motion } from 'framer-motion'
 import { 
-  Linkedin, 
-  Instagram, 
-  Youtube,
-  Film,
-  Sparkles,
-  PenTool,
-  Clapperboard
+  Clapperboard,
+  Wand2
 } from 'lucide-react'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -36,9 +31,9 @@ const Footer = () => {
   }
 
   const socialLinks = [
-    { name: 'Instagram', icon: Instagram, href: 'https://www.instagram.com/orabluclub' },
-    { name: 'LinkedIn', icon: Linkedin, href: 'https://www.linkedin.com/company/orabluclub/' },
-    { name: 'YouTube', icon: Youtube, href: 'https://www.youtube.com/@OraBluClub' }
+    { name: 'Instagram', icon: Wand2, href: 'https://www.instagram.com/orabluclub' },
+    { name: 'LinkedIn', icon: Wand2, href: 'https://www.linkedin.com/company/orabluclub/' },
+    { name: 'YouTube', icon: Wand2, href: 'https://www.youtube.com/@OraBluClub' }
   ]
 
   return (
@@ -73,8 +68,8 @@ const Footer = () => {
               <h3 className="text-2xl font-bold text-slate-100 mb-4">
                 Quit Dreaming, Start Shooting
               </h3>
-              <p className="text-slate-400 mb-8 leading-relaxed max-w-md">
-                The AI-powered production suite for modern filmmakers. From script to screen, we&apos;ve got you covered. 
+              <p className="text-slate-400 mb-6">
+                Ready to transform your filmmaking workflow? Let&apos;s get your story made.
               </p>
               
               <motion.div
@@ -87,7 +82,7 @@ const Footer = () => {
                   className="inline-flex items-center bg-gradient-to-r from-primary to-primary-dark hover:from-primary-light hover:to-primary-dark text-white px-6 py-3 rounded-lg font-semibold shadow-lg shadow-primary/30 transition-all duration-300 text-base"
                 >
                   <Clapperboard className="mr-2 h-5 w-5" />
-                  Let's Tell Your Story
+                  Let&apos;s Tell Your Story
                 </Link>
               </motion.div>
             </motion.div>

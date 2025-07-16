@@ -5,12 +5,9 @@ import {
   Bot,
   Users, 
   Calendar, 
-  ListChecks, 
-  Wrench,
   Palette,
   Sparkles,
-  Clapperboard,
-  Presentation
+  Clapperboard
 } from 'lucide-react'
 import Image from 'next/image'
 import { getAssetPath } from '@/lib/utils'
@@ -121,7 +118,7 @@ const Features = () => {
             </span>
           </h2>
           <p className="text-xl text-slate-400 max-w-3xl mx-auto">
-            Storiara is more than a tool—it's your AI production partner. Automate tedious tasks and focus on what matters: telling a great story.
+            Storiara is more than a tool—it&apos;s your AI production partner. Automate tedious tasks and focus on what matters: telling a great story.
           </p>
         </motion.div>
 

@@ -1,8 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Code, Film, Palette, Zap, Users, Target, Bot, ShieldCheck, DollarSign, Calendar, Rocket } from 'lucide-react'
-import Link from 'next/link'
+import { Palette, Users, ShieldCheck, Calendar, Rocket, Bot } from 'lucide-react'
 
 const Platform = () => {
   const expertise = [

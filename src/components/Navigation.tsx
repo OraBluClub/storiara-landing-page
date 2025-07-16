@@ -95,7 +95,7 @@ const Navigation = () => {
             >
               <Link href="https://app.storiara.com" className="flex items-center">
                 <Clapperboard className="mr-2 h-5 w-5" />
-                Let's Tell Your Story
+                Let&apos;s Tell Your Story
               </Link>
             </Button>
           </div>

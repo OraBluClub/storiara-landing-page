@@ -15,7 +15,6 @@ const Hero = () => {
     offset: ["start start", "end start"]
   })
 
-  const y = useTransform(heroScrollYProgress, [0, 1], ["0%", "50%"])
   const opacity = useTransform(heroScrollYProgress, [0, 1], [1, 0])
 
   const imageContainerRef = useRef<HTMLDivElement>(null);
