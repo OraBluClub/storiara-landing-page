@@ -2,7 +2,7 @@
 
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { Button } from '@/components/ui/button'
-import { Film, Camera, Clapperboard, Users, Bot } from 'lucide-react'
+import { Film, Camera, Clapperboard, Users, Bot, Upload } from 'lucide-react'
 import Link from 'next/link'
 import { useRef } from 'react'
 import Image from 'next/image'
@@ -148,8 +148,8 @@ const Hero = () => {
                   whileTap={{ scale: 0.95 }}
                   className="flex items-center"
                 >
-                  <Clapperboard className="mr-2 h-6 w-6 group-hover:animate-pulse" />
-                  Start Creating for Free
+                  <Upload className="mr-2 h-6 w-6 group-hover:animate-pulse" />
+                  Upload & Start for Free
                 </motion.div>
               </Link>
             </Button>
