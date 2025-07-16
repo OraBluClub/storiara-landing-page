@@ -8,8 +8,12 @@ const dmSans = DM_Sans({
 })
 
 export const metadata = {
-  title: 'Storiara - AI-Powered Film Production',
-  description: 'From script to screen, Storiara is your AI production partner. Automate tedious tasks and focus on what matters: telling a great story.',
+  title: 'Storiara - AI Pre-Production',
+  description: 'Storiara is your AI pre-production partner. Automate tedious tasks and focus on what matters: telling a great story.',
+  icons: {
+    icon: '/icons/iconfull.svg',
+    apple: '/icons/iconfull.svg',
+  },
 }
 
 export default function RootLayout({
