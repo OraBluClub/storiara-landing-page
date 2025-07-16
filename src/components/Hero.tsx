@@ -128,7 +128,7 @@ const Hero = () => {
             transition={{ duration: 1, delay: 2 }}
             className="text-xl md:text-2xl text-slate-400 mb-12 max-w-4xl mx-auto leading-relaxed"
           >
-            Built by filmmakers, for filmmakers. Break down scripts, map characters, manage cast, track gear, build shotlists, schedule scenes, and plan your visual style.
+            Built by filmmakers, for filmmakers. With just your script, we instantly break down plotholes, map characters, manage cast, track gear, build shotlists, schedule scenes, and craft your visual style.
           </motion.p>
 
           <motion.div
