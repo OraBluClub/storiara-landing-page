@@ -7,7 +7,8 @@ import {
   Youtube,
   Film,
   Sparkles,
-  PenTool
+  PenTool,
+  Clapperboard
 } from 'lucide-react'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -18,26 +19,19 @@ const Footer = () => {
     Platform: [
       { name: 'Features', href: '#features' },
       { name: 'Pricing', href: '#pricing' },
-      { name: 'Integrations', href: '#integrations' },
-      { name: 'Security', href: '#security' }
+      { name: 'FAQ', href: '#faq' },
     ],
     Resources: [
-      { name: 'Documentation', href: '#docs' },
-      { name: 'Tutorials', href: '#tutorials' },
-      { name: 'Blog', href: '#blog' },
-      { name: 'Community', href: '#community' }
+      { name: 'Blog', href: '#' },
+      { name: 'Community', href: '#' },
     ],
     Company: [
-      { name: 'About', href: '#about' },
-      { name: 'Careers', href: '#careers' },
-      { name: 'Contact', href: '#contact' },
-      { name: 'Press', href: '#press' }
+      { name: 'About', href: '#team' },
+      { name: 'Contact', href: 'mailto:support@storiara.com' },
     ],
     Legal: [
-      { name: 'Privacy Policy', href: '#privacy' },
-      { name: 'Terms of Service', href: '#terms' },
-      { name: 'Cookie Policy', href: '#cookies' },
-      { name: 'GDPR', href: '#gdpr' }
+      { name: 'Privacy Policy', href: '#' },
+      { name: 'Terms of Service', href: '#' },
     ]
   }
 
@@ -48,14 +42,14 @@ const Footer = () => {
   ]
 
   return (
-    <footer className="relative overflow-hidden bg-gradient-to-b from-black via-slate-950 to-black">
+    <footer className="relative overflow-hidden bg-gradient-to-b from-primary/10 via-black to-primary/10">
       {/* Background Effects */}
-      <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-96 h-96 bg-blue-600/5 rounded-full blur-3xl" />
-      <div className="absolute bottom-0 right-1/4 w-64 h-64 bg-blue-500/10 rounded-full blur-2xl" />
+      <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
+      <div className="absolute bottom-0 right-1/4 w-64 h-64 bg-primary/10 rounded-full blur-2xl" />
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main Footer Content */}
-        <div className="py-16 border-b border-blue-600/20">
+        <div className="py-16 border-b border-primary/20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-12">
             {/* Left Column - Brand & CTA */}
             <motion.div
@@ -66,24 +60,21 @@ const Footer = () => {
             >
               <div className="flex items-center mb-6">
                                             <Image
-                  src={getAssetPath("/assets/visionara-dark.svg")}
+                  src={getAssetPath("/assets/storiara.svg")}
                   alt="Logo"
                   width={240}
                   height={48}
+                  style={{ filter: 'drop-shadow(0 0 10px rgba(59,130,246,0.5))' }}
                   className="mr-4 h-12 w-auto"
                 />
-                <div className="flex items-center space-x-2">
-                  <Film className="h-6 w-6 text-blue-400" />
-                  <Sparkles className="h-5 w-5 text-blue-300" />
-                </div>
+                
               </div>
               
               <h3 className="text-2xl font-bold text-slate-100 mb-4">
-                Transform Your Production Workflow
+                Quit Dreaming, Start Shooting
               </h3>
               <p className="text-slate-400 mb-8 leading-relaxed max-w-md">
-                Professional film production tools designed for creators who demand excellence. 
-                From script to screen, we&apos;ve got you covered.
+                The AI-powered production suite for modern filmmakers. From script to screen, we&apos;ve got you covered. 
               </p>
               
               <motion.div
@@ -92,11 +83,11 @@ const Footer = () => {
                 className="inline-block"
               >
                 <Link
-                  href="https://app.storiara.com"
-                  className="inline-flex items-center bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-700 hover:to-blue-900 text-white px-6 py-3 rounded-lg font-semibold shadow-lg shadow-blue-600/30 transition-all duration-300 text-base"
+                  href="https://app.storiara.com/signup"
+                  className="inline-flex items-center bg-gradient-to-r from-primary to-primary-dark hover:from-primary-light hover:to-primary-dark text-white px-6 py-3 rounded-lg font-semibold shadow-lg shadow-primary/30 transition-all duration-300 text-base"
                 >
-                  <PenTool className="mr-2 h-5 w-5" />
-                  Tell Your Story
+                  <Clapperboard className="mr-2 h-5 w-5" />
+                  Let's Tell Your Story
                 </Link>
               </motion.div>
             </motion.div>
@@ -125,7 +116,7 @@ const Footer = () => {
                       >
                         <Link
                           href={link.href}
-                          className="text-slate-400 hover:text-blue-400 transition-colors duration-300 text-sm"
+                          className="text-slate-400 hover:text-primary transition-colors duration-300 text-sm"
                         >
                           {link.name}
                         </Link>
@@ -143,7 +134,7 @@ const Footer = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
             viewport={{ once: true }}
-            className="bg-slate-900/40 backdrop-blur-xl border border-blue-600/20 rounded-2xl p-8"
+            className="bg-primary/10 backdrop-blur-xl border border-primary/20 rounded-2xl p-8"
           >
             <div className="text-center md:text-left md:flex md:items-center md:justify-between">
               <div className="mb-6 md:mb-0">
@@ -158,12 +149,12 @@ const Footer = () => {
                 <input
                   type="email"
                   placeholder="Enter your email"
-                  className="px-4 py-3 bg-slate-800 border border-blue-600/30 rounded-lg text-slate-100 placeholder-slate-500 focus:outline-none focus:border-blue-500 transition-colors duration-300"
+                  className="px-4 py-3 bg-slate-800 border border-primary/30 rounded-lg text-slate-100 placeholder-slate-500 focus:outline-none focus:border-primary transition-colors duration-300"
                 />
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-700 hover:to-blue-900 text-white px-6 py-3 rounded-lg font-semibold shadow-lg shadow-blue-600/30 transition-all duration-300 whitespace-nowrap"
+                  className="bg-gradient-to-r from-primary to-primary-dark hover:from-primary-light hover:to-primary-dark text-white px-6 py-3 rounded-lg font-semibold shadow-lg shadow-primary/30 transition-all duration-300 whitespace-nowrap"
                 >
                   Subscribe
                 </motion.button>
@@ -198,7 +189,7 @@ const Footer = () => {
                 href={social.href}
                 whileHover={{ scale: 1.2, y: -2 }}
                 whileTap={{ scale: 0.9 }}
-                className="p-2 rounded-lg bg-slate-800/50 hover:bg-blue-600/20 text-slate-400 hover:text-blue-400 transition-all duration-300"
+                className="p-2 rounded-lg bg-slate-800/50 hover:bg-primary/20 text-slate-400 hover:text-primary transition-all duration-300"
                 aria-label={social.name}
               >
                 <social.icon className="h-5 w-5" />

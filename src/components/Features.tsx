@@ -2,110 +2,110 @@
 
 import { motion } from 'framer-motion'
 import { 
-  Presentation, 
+  Bot,
   Users, 
   Calendar, 
   ListChecks, 
   Wrench,
-  Target,
-  Zap,
-  ClipboardCheck,
-  Clapperboard
+  Palette,
+  Sparkles,
+  Clapperboard,
+  Presentation
 } from 'lucide-react'
+import Image from 'next/image'
+import { getAssetPath } from '@/lib/utils'
 
 const Features = () => {
   const features = [
     {
-      title: "Scene Analysis & Breakdown",
-      description: "Intelligent script parsing that automatically extracts scenes, identifies locations, and estimates timing. Transform your screenplay into a structured production blueprint.",
-      icon: Presentation,
+      title: "Agentic Script Analysis",
+      description: "Our core engine reads any script format and instantly extracts key elements, creating a structured foundation for your entire project.",
+      icon: Bot,
+      image: getAssetPath('features/ai-script.png'),
       items: [
-        "Automated scene extraction from scripts",
-        "Location and setting identification", 
-        "Scene timing and length estimation",
-        "Character presence tracking"
+        "Automated scene & setting extraction",
+        "Character and dialogue identification", 
+        "Plot consistency analysis",
+        "Logline & synopsis generation"
       ]
     },
     {
-      title: "Cast & Character Management",
-      description: "Comprehensive character database with detailed profiles, casting notes, and availability tracking. Keep your entire cast organized and accessible.",
-      icon: Users,
+      title: "AI-Powered Pre-Production",
+      description: "Generate a complete pre-production package in minutes. From characters to budgets, let AI handle the heavy lifting.",
+      icon: Sparkles,
+      image: getAssetPath('features/ai-pre-production.png'),
       items: [
-        "Character profile creation",
-        "Actor casting and notes",
-        "Availability scheduling",
-        "Contact management"
+        "Character descriptions & backstories",
+        "Budget estimates based on script elements",
+        "Equipment & crew role suggestions",
+        "Detailed scene breakdowns"
       ]
     },
     {
-      title: "Production Scheduling",
-      description: "Advanced scheduling tools that optimize your shoot days based on locations, cast availability, and equipment needs. Maximize efficiency and minimize costs.",
+      title: "Generative Visuals",
+      description: "Bring your vision to life before you even start shooting. Create concept art, storyboards, and marketing materials with AI.",
+      icon: Palette,
+      image: getAssetPath('features/ai-visuals.png'),
+      items: [
+        "AI Character Image Generation",
+        "AI Storyboard Generation (Image & Video)",
+        "AI Logo & Poster Creation",
+        "Color scheme generation"
+      ]
+    },
+    {
+      title: "Intelligent Scheduling",
+      description: "Develop comprehensive shot lists and shooting schedules. Organize your production with smart, integrated tools.",
       icon: Calendar,
+      image: getAssetPath('features/ai-scheduling.png'),
       items: [
-        "Intelligent shoot scheduling",
-        "Location-based optimization",
-        "Cast availability integration",
-        "Equipment coordination"
+        "Automated shot list creation",
+        "Cast & crew availability management",
+        "Location & equipment coordination",
+        "PDF call sheet generation"
       ]
     },
     {
-      title: "Shotlist Development",
-      description: "Create detailed shot lists with camera angles, movements, and technical specifications. Plan every frame before you roll camera.",
-      icon: ListChecks,
+      title: "Collaborative Workspace",
+      description: "A centralized hub for your entire team. Keep everyone on the same page, from writers to producers and department heads.",
+      icon: Users,
+      image: getAssetPath('features/ai-workspace.png'),
       items: [
-        "Shot-by-shot planning",
-        "Camera angle specifications",
-        "Technical requirements",
-        "Visual reference management"
+        "Shared project access",
+        "Real-time updates",
+        "Role-based permissions",
+        "Centralized document storage"
       ]
     },
     {
-      title: "Equipment Management",
-      description: "Track all your production equipment, from cameras to lighting. Ensure nothing gets left behind and everything is accounted for.",
-      icon: Wrench,
+      title: "Full Production Toolkit",
+      description: "Beyond pre-production, Storiara supports your project through to the final cut with integrated on-set and post-production tools.",
+      icon: Clapperboard,
+      image: getAssetPath('features/ai-toolkit.png'),
       items: [
-        "Equipment inventory tracking",
-        "Rental management",
-        "Maintenance scheduling",
-        "Location-based logistics"
-      ]
-    },
-    {
-      title: "Marketing & Distribution",
-      description: "Built-in marketing tools to promote your project. Create campaigns, manage social media, and track your audience engagement.",
-      icon: Target,
-      items: [
-        "Campaign management",
-        "Social media integration",
-        "Audience analytics",
-        "Distribution planning"
+        "On-set notetaking & continuity",
+        "Editing software integration hooks",
+        "Marketing & distribution planning",
+        "Complete asset management"
       ]
     }
   ]
 
-  const productionFeatures = [
-    {
-      title: "Content Generation",
-      description: "Streamline content creation for marketing materials, social media, and promotional assets.",
-      icon: Zap
-    },
-    {
-      title: "On-Set Notes",
-      description: "Digital script supervision and continuity tracking during production.",
-      icon: ClipboardCheck
-    },
-    {
-      title: "Editing Integration",
-      description: "Seamless workflow integration with popular editing software and post-production tools.",
-      icon: Clapperboard
-    }
-  ]
+  const integrations = [
+    { name: 'Google Drive', src: getAssetPath('integrations/drive.webp') },
+    { name: 'Dropbox', src: getAssetPath('integrations/dropbox.png') },
+    { name: 'Final Draft', src: getAssetPath('integrations/final-draft.png') },
+    { name: 'Google Calendar', src: getAssetPath('integrations/calendar.webp') },
+    { name: 'Notion', src: getAssetPath('integrations/notion.webp') },
+    { name: 'BackStage', src: getAssetPath('integrations/backstage.png') },
+    { name: 'Word', src: getAssetPath('integrations/word.webp') },
+  ];
 
   return (
     <section className="py-24 relative overflow-hidden" id="features">
       {/* Dark background with subtle blue glow */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black via-slate-950 to-slate-900" />
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black via-primary/10 to-primary/10" />
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
@@ -116,13 +116,12 @@ const Features = () => {
           className="text-center mb-20"
         >
           <h2 className="text-4xl md:text-6xl font-bold mb-6">
-            <span className="bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 bg-clip-text text-transparent">
-              Complete Production Suite
+            <span className="bg-gradient-to-b from-primary-foreground to-primary bg-clip-text text-transparent">
+              An Entire Studio in Your Browser
             </span>
           </h2>
           <p className="text-xl text-slate-400 max-w-3xl mx-auto">
-            Everything you need to take your project from script to screen. Professional-grade tools 
-            designed for modern filmmakers and content creators.
+            Storiara is more than a tool—it's your AI production partner. Automate tedious tasks and focus on what matters: telling a great story.
           </p>
         </motion.div>
 
@@ -136,111 +135,97 @@ const Features = () => {
               transition={{ duration: 0.8, delay: index * 0.1 }}
               viewport={{ once: true }}
               whileHover={{ scale: 1.02, y: -5 }}
-              className="bg-slate-900/60 backdrop-blur-xl border border-blue-600/20 rounded-2xl p-8 h-full transform-style-3d hover:border-blue-500/40 transition-all duration-500 group"
+              className="bg-primary/10 backdrop-blur-xl border border-primary/20 rounded-2xl h-full transform-style-3d hover:border-primary/40 transition-all duration-500 group relative overflow-hidden"
             >
-              <div className="flex items-start space-x-4 mb-6">
-                <div className="flex-shrink-0 p-3 rounded-lg bg-gradient-to-r from-blue-600/20 to-blue-800/20 group-hover:from-blue-500/30 group-hover:to-blue-700/30 transition-all duration-300">
-                  <feature.icon className="h-8 w-8 text-blue-400" />
-                </div>
-                <div>
-                  <h3 className="text-2xl font-bold text-slate-100 mb-3">
-                    {feature.title}
-                  </h3>
-                  <p className="text-slate-400 leading-relaxed mb-6">
-                    {feature.description}
-                  </p>
-                </div>
+              <div className="absolute inset-0">
+                  <Image
+                      src={feature.image}
+                      alt={feature.title}
+                      fill
+                      style={{ opacity: 0.08 }}
+                      className="object-cover w-full h-full group-hover:scale-110 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black-900 via-slate-9000 to-transparent"></div>
               </div>
-              
-              <div className="space-y-3">
-                {feature.items.map((item, itemIndex) => (
-                  <motion.div
-                    key={itemIndex}
-                    initial={{ opacity: 0, x: -20 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ delay: (index * 0.1) + (itemIndex * 0.1) }}
-                    viewport={{ once: true }}
-                    className="flex items-center space-x-3 group/item"
-                  >
-                    <div className="flex-shrink-0 p-1 rounded-full bg-blue-600/20 group-hover/item:bg-blue-500/30 transition-colors duration-300">
-                      <div className="w-2 h-2 bg-blue-400 rounded-full" />
-                    </div>
-                    <span className="text-slate-300 group-hover/item:text-blue-300 transition-colors duration-300">
-                      {item}
-                    </span>
-                  </motion.div>
-                ))}
+
+              <div className="relative z-10 flex flex-col justify-start h-full p-8">
+                <div className="flex items-start space-x-4 mb-6">
+                  <div className="flex-shrink-0 p-3 rounded-lg bg-gradient-to-r from-primary/20 to-primary-dark/20 group-hover:from-primary/30 group-hover:to-primary-dark/30 transition-all duration-300">
+                    <feature.icon className="h-8 w-8 text-primary" />
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-bold text-slate-100 mb-3">
+                      {feature.title}
+                    </h3>
+                    <p className="text-slate-400 leading-relaxed mb-6">
+                      {feature.description}
+                    </p>
+                  </div>
+                </div>
+                
+                <div className="space-y-3">
+                  {feature.items.map((item, itemIndex) => (
+                    <motion.div
+                      key={itemIndex}
+                      initial={{ opacity: 0, x: -20 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      transition={{ delay: (index * 0.1) + (itemIndex * 0.1) }}
+                      viewport={{ once: true }}
+                      className="flex items-center space-x-3 group/item"
+                    >
+                      <div className="flex-shrink-0 p-1 rounded-full bg-primary/20 group-hover/item:bg-primary/30 transition-colors duration-300">
+                        <div className="w-2 h-2 bg-primary rounded-full" />
+                      </div>
+                      <span className="text-slate-300 group-hover/item:text-primary-light transition-colors duration-300">
+                        {item}
+                      </span>
+                    </motion.div>
+                  ))}
+                </div>
               </div>
             </motion.div>
           ))}
         </div>
 
-        {/* Production Tools Section */}
+        {/* Integrations Ticker */}
         <motion.div
+          className="mt-10 w-full"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
+          transition={{ duration: 1, delay: 0.5 }}
           viewport={{ once: true }}
-          className="text-center mb-12"
         >
-          <h3 className="text-3xl md:text-4xl font-bold mb-4">
-            <span className="bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">
-              Production & Post-Production
-            </span>
-          </h3>
-          <p className="text-lg text-slate-400 max-w-2xl mx-auto">
-            Seamless workflow integration for every stage of production
-          </p>
-        </motion.div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-          {productionFeatures.map((feature, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: index * 0.2 }}
-              viewport={{ once: true }}
-              whileHover={{ scale: 1.05, y: -10 }}
-              className="text-center p-8 rounded-xl bg-slate-900/40 backdrop-blur-sm border border-blue-600/20 hover:border-blue-500/40 transition-all duration-300 group"
-            >
-              <div className="inline-flex items-center justify-center p-4 rounded-xl bg-gradient-to-r from-blue-600/20 to-blue-800/20 mb-6 group-hover:from-blue-500/30 group-hover:to-blue-700/30 transition-all duration-300">
-                <feature.icon className="h-8 w-8 text-blue-400" />
-              </div>
-              <h4 className="text-xl font-bold text-slate-100 mb-3">
-                {feature.title}
-              </h4>
-              <p className="text-slate-400 leading-relaxed">
-                {feature.description}
-              </p>
-            </motion.div>
-          ))}
-        </div>
-
-        {/* Call to Action */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1 }}
-          viewport={{ once: true }}
-          className="text-center"
-        >
-          <div className="bg-gradient-to-r from-blue-600/10 to-blue-800/10 border border-blue-600/30 rounded-2xl p-8 max-w-2xl mx-auto">
-            <h3 className="text-2xl font-bold text-slate-100 mb-4">
-              Ready to Transform Your Production?
-            </h3>
-            <p className="text-slate-400 mb-6">
-              Join the future of filmmaking with professional production tools designed for creators.
+          <div className="text-center">
+     
+            <p className="text-lg text-slate-400 max-w-2xl mx-auto mb-10">
+              Integrates with your favorite existing workflow...
             </p>
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-700 hover:to-blue-900 text-white px-8 py-3 rounded-lg font-semibold shadow-lg shadow-blue-600/30 transition-all duration-300"
+          </div>
+          <div className="relative w-full overflow-hidden mask-image-gradient">
+            <motion.div
+              className="flex items-center"
+              animate={{
+                x: ['0%', '-100%'],
+              }}
+              transition={{
+                ease: 'linear',
+                duration: 60,
+                repeat: Infinity,
+              }}
             >
-              <a href="https://app.storiara.com">
-                Start Your Project
-              </a>
-            </motion.button>
+              {/* Render logos twice for seamless loop */}
+              {[...integrations, ...integrations].map((logo, index) => (
+                <div key={index} className="flex-shrink-0 mx-8" style={{ width: '100px' }}>
+                  <Image
+                    src={logo.src}
+                    alt={logo.name}
+                    width={100}
+                    height={100}
+                    className="object-contain rounded-xl h-100 w-full filter  opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-300"
+                  />
+                </div>
+              ))}
+            </motion.div>
           </div>
         </motion.div>
       </div>

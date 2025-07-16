@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { useState } from 'react'
-import { ChevronDown, HelpCircle, Mail } from 'lucide-react'
+import { ChevronDown, HelpCircle, Mail, MessageCircle, Sparkle, Sparkles } from 'lucide-react'
 import Link from 'next/link'
 
 const FAQ = () => {
@@ -18,53 +18,45 @@ const FAQ = () => {
 
   const faqs = [
     {
-      question: "What types of projects can I manage with the platform?",
-      answer: "Our platform supports all types of film and video production projects, from short films and documentaries to feature films and commercial productions. Whether you're an independent filmmaker or part of a large production company, our tools scale to meet your needs."
+      question: "What is Storiara?",
+      answer: "Storiara is an AI-powered production platform that automates the entire pre-production pipeline. Simply upload a script, and our AI will generate breakdowns, character profiles, storyboards, budgets, schedules, and more, helping you get from idea to production-ready in minutes."
     },
     {
-      question: "How does the script breakdown feature work?",
-      answer: "Our intelligent script analysis automatically identifies scenes, characters, locations, and timing estimates from your screenplay. It creates a structured breakdown that serves as the foundation for all other production planning activities, saving hours of manual work."
+      question: "How does the AI script analysis work?",
+      answer: "Our intelligent script analysis reads and understands your screenplay format. It automatically identifies scenes, characters, locations, dialogue, and action lines to create a structured breakdown. This breakdown becomes the data source for all other AI generation features."
     },
     {
-      question: "Can multiple team members collaborate on the same project?",
-      answer: "Yes! Our platform is built for collaboration. Team members can work simultaneously on different aspects of the project, with real-time updates and role-based permissions to ensure everyone has access to what they need while maintaining project security."
+      question: "What's the difference between the Free and Pro plans?",
+      answer: "The Free plan is designed to give you a taste of our AI's power, allowing you to create one story with a limited number of AI calls. The Pro plan unlocks the full platform, offering unlimited stories, a high volume of AI calls, and access to all our premium generative features like AI storyboards, character art, and logos."
     },
     {
-      question: "What scheduling optimization features are included?",
-      answer: "Our advanced scheduling tools consider multiple factors including cast availability, location logistics, equipment needs, and weather conditions. The system suggests optimal shooting schedules that minimize costs and maximize efficiency while respecting all constraints."
+      question: "What can I generate with the AI tools?",
+      answer: "On the Pro plan, you can generate a wide range of creative and logistical assets, including: character images, detailed storyboards (both images and videos), concept art, promotional posters, project logos, color schemes, budget estimates, equipment lists, and crew suggestions."
     },
     {
-      question: "How does the equipment management system work?",
-      answer: "Track all your production equipment from cameras to lighting gear. The system helps you manage inventory, schedule rentals, coordinate logistics, and ensure nothing gets left behind. Integration with scheduling ensures equipment is available when and where you need it."
+      question: "What happens if I use all my AI calls on the Pro plan?",
+      answer: "Our Pro plan comes with 1,000 AI calls per month, which is more than enough for the vast majority of projects. If you're a studio with higher-volume needs, our Enterprise plan offers custom limits and dedicated processing."
     },
     {
-      question: "What marketing tools are available?",
-      answer: "Our marketing suite includes campaign management, social media integration, audience analytics, and promotional material creation tools. Plan your marketing strategy alongside your production timeline for maximum impact."
+      question: "Can I collaborate with my team?",
+      answer: "Yes! Collaboration is core to Storiara. The Pro plan allows you to invite collaborators to your project, while our Enterprise plan offers advanced team management features, role-based permissions, and a centralized workspace for your entire company."
     },
     {
-      question: "Is there a mobile app available?",
-      answer: "Yes, our platform is fully responsive and works seamlessly on mobile devices. Access your projects, update schedules, and collaborate with your team from anywhere on set or in the field."
+      question: "Is my script and project data secure?",
+      answer: "Absolutely. We prioritize your data security and intellectual property. All projects are private and encrypted. We use industry-standard security protocols, and your data is never used to train third-party models. You retain full ownership of your work."
     },
     {
-      question: "What kind of support do you provide?",
-      answer: "We offer comprehensive support including documentation, video tutorials, email support, and priority support for Professional and Enterprise plans. Enterprise customers also get dedicated account management and custom training sessions."
-    },
-    {
-      question: "Can I export my data and integrate with other tools?",
-      answer: "Absolutely! Export your data in various formats and integrate with popular tools like Final Cut Pro, Avid, and other post-production software. Our API allows for custom integrations with your existing workflow."
-    },
-    {
-      question: "What happens to my data if I cancel my subscription?",
-      answer: "You retain full access to export all your project data before your subscription ends. We provide a grace period and multiple export options to ensure you never lose your work. Your data security and ownership are our top priorities."
+      question: "Can I export my data?",
+      answer: "Yes. You can export schedules, call sheets, budgets, and other reports as PDFs. We are continuously working on adding more export formats and integrations with other professional filmmaking software."
     }
   ]
 
   return (
-    <section className="py-24 relative overflow-hidden" id="faq">
+    <section className="py-10 pt-0 relative overflow-hidden" id="faq">
       {/* Dark background with blue glow */}
-      <div className="absolute inset-0 bg-gradient-to-b from-slate-900 via-black to-slate-950" />
-      <div className="absolute top-1/4 right-1/3 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl" />
-      <div className="absolute bottom-1/4 left-1/3 w-64 h-64 bg-blue-500/15 rounded-full blur-2xl" />
+      <div className="absolute inset-0 bg-gradient-to-b from-primary/20 via-black to-slate-950" />
+      <div className="absolute top-1/4 right-1/3 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
+      <div className="absolute bottom-1/4 left-1/3 w-64 h-64 bg-primary/15 rounded-full blur-2xl" />
       
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
@@ -74,16 +66,16 @@ const FAQ = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <div className="inline-flex items-center justify-center p-4 rounded-xl bg-gradient-to-r from-blue-600/20 to-blue-800/20 mb-6">
-            <HelpCircle className="h-8 w-8 text-blue-400" />
+          <div className="inline-flex items-center justify-center p-4 rounded-xl bg-gradient-to-r from-primary/20 to-primary-dark/20 mb-6">
+            <MessageCircle className="h-8 w-8 text-primary" />
           </div>
           <h2 className="text-4xl md:text-6xl font-bold mb-6">
-            <span className="bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-b from-primary-foreground to-primary bg-clip-text text-transparent">
               Frequently Asked Questions
             </span>
           </h2>
           <p className="text-xl text-slate-400">
-            Everything you need to know about our production platform
+            Everything you need to know about our AI production platform.
           </p>
         </motion.div>
 
@@ -95,11 +87,11 @@ const FAQ = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="bg-slate-900/60 backdrop-blur-xl border border-blue-600/20 rounded-xl overflow-hidden hover:border-blue-500/40 transition-all duration-300"
+              className="bg-primary/10 backdrop-blur-xl border border-primary/20 rounded-xl overflow-hidden hover:border-primary/40 transition-all duration-300"
             >
               <button
                 onClick={() => toggleItem(index)}
-                className="w-full px-6 py-6 text-left flex items-center justify-between hover:bg-blue-600/5 transition-colors duration-200"
+                className="w-full px-6 py-6 text-left flex items-center justify-between hover:bg-primary/5 transition-colors duration-200"
               >
                 <h3 className="text-lg font-semibold text-slate-100 pr-4">
                   {faq.question}
@@ -108,7 +100,7 @@ const FAQ = () => {
                   animate={{ rotate: openItems.includes(index) ? 180 : 0 }}
                   transition={{ duration: 0.3 }}
                 >
-                  <ChevronDown className="h-5 w-5 text-blue-400" />
+                  <ChevronDown className="h-5 w-5 text-primary" />
                 </motion.div>
               </button>
               
@@ -139,7 +131,7 @@ const FAQ = () => {
           viewport={{ once: true }}
           className="text-center"
         >
-          <div className="bg-gradient-to-r from-blue-600/10 to-blue-800/10 border border-blue-600/30 rounded-2xl p-8">
+          <div className="bg-gradient-to-r from-primary/10 to-primary-dark/10 border border-primary/30 rounded-2xl p-8">
             <h3 className="text-2xl font-bold text-slate-100 mb-4">
               Still have questions?
             </h3>
@@ -150,7 +142,7 @@ const FAQ = () => {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-700 hover:to-blue-900 text-white px-6 py-3 rounded-lg font-semibold shadow-lg shadow-blue-600/30 transition-all duration-300"
+                className="bg-gradient-to-r from-primary to-primary-dark hover:from-primary-light hover:to-primary-dark text-white px-6 py-3 rounded-lg font-semibold shadow-lg shadow-primary/30 transition-all duration-300"
               >
                 <Link href="mailto:support@storiara.com" className="flex items-center justify-center">
                   <Mail className="mr-2 h-5 w-5" />

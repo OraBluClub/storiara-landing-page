@@ -1,51 +1,52 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Check, Star, Zap } from 'lucide-react'
+import { Check, Star, Zap, ShieldCheck, Film, Bot, Wand2, Camera, Clapperboard, TrendingUp } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 
 const Pricing = () => {
   const plans = [
     {
-      name: "Creator",
-      price: "$29",
+      name: "Free",
+      price: "$0",
       period: "/month",
-      description: "Perfect for independent filmmakers and small projects",
+      description: "Get started with the basics of AI-powered filmmaking",
       popular: false,
       features: [
-        "Complete script breakdown",
-        "Scene analysis & timing",
-        "Character management",
-        "Basic scheduling tools",
-        "Equipment tracking",
-        "Export capabilities"
+        "Create story from script",
+        "Generate logline",
+        "Extract scenes & settings",
+        "Analyze plot consistency",
+        "Generate shotlist"
       ],
       limitations: [
-        "Up to 3 active projects",
-        "Standard support"
-      ]
+        "3 stories",
+        "100 AI calls per month",
+        "Limited feature access"
+      ],
+      buttonText: "Start for Free",
+      buttonLink: "https://app.storiara.com/signup"
     },
     {
-      name: "Professional",
-      price: "$79",
+      name: "Pro",
+      price: "$9.99",
       period: "/month",
-      description: "Ideal for production companies and larger teams",
+      description: "Unlock the full power of Storiara for professional results",
       popular: true,
       features: [
-        "Everything in Creator",
-        "Advanced scheduling optimization",
-        "Team collaboration tools",
-        "Marketing campaign management",
-        "Custom branding",
-        "Priority support",
-        "Advanced analytics",
-        "Integration capabilities"
+        "Everything in Free",
+        "Unlimited stories",
+        "1,000 AI calls per month",
+        "AI Character Image Generation",
+        "AI Storyboard Generation",
+        "AI Logo & Poster Creation",
+        "Advanced Budgeting Tools",
+        "Priority support"
       ],
-      limitations: [
-        "Up to 15 active projects",
-        "Advanced reporting"
-      ]
+      limitations: [],
+      buttonText: "Upgrade to Pro",
+      buttonLink: "https://app.storiara.com/signup"
     },
     {
       name: "Enterprise",
@@ -54,36 +55,36 @@ const Pricing = () => {
       description: "Tailored solutions for studios and large organizations",
       popular: false,
       features: [
-        "Everything in Professional",
-        "Unlimited projects",
-        "Custom integrations",
+        "Everything in Pro",
+        "Unlimited projects & users",
+        "Custom integrations (VFX, etc.)",
         "Dedicated account manager",
         "On-premise deployment options",
-        "Custom training sessions",
+        "Bespoke AI model training",
         "24/7 premium support",
         "White-label solutions"
       ],
-      limitations: []
+      limitations: [],
+      buttonText: "Contact Sales",
+      buttonLink: "mailto:sales@storiara.com"
     }
   ]
 
   const comparisonFeatures = [
-    { feature: "Script Analysis", creator: "Basic", professional: "Advanced", enterprise: "Custom" },
-    { feature: "Scene Breakdown", creator: "✓", professional: "✓", enterprise: "✓" },
-    { feature: "Team Collaboration", creator: "Limited", professional: "Full", enterprise: "Enterprise" },
-    { feature: "Marketing Tools", creator: "Basic", professional: "Advanced", enterprise: "Custom" },
-    { feature: "Integrations", creator: "Standard", professional: "Advanced", enterprise: "Custom" },
-    { feature: "Support Level", creator: "Standard", professional: "Priority", enterprise: "Dedicated" },
-    { feature: "Custom Branding", creator: "✗", professional: "✓", enterprise: "✓" },
-    { feature: "Analytics", creator: "Basic", professional: "Advanced", enterprise: "Custom" }
+    { feature: "Story Creation", free: "1 Story", pro: "Unlimited", enterprise: "Unlimited" },
+    { feature: "AI Calls / Month", free: "10", pro: "1,000", enterprise: "Custom" },
+    { feature: "AI Image & Video Generation", free: "✗", pro: <Check className="h-5 w-5 text-primary mx-auto" />, enterprise: <Check className="h-5 w-5 text-primary mx-auto" /> },
+    { feature: "Advanced Budgeting", free: "✗", pro: <Check className="h-5 w-5 text-primary mx-auto" />, enterprise: <Check className="h-5 w-5 text-primary mx-auto" /> },
+    { feature: "Team Collaboration", free: "Limited", pro: "Full", enterprise: "Custom" },
+    { feature: "Support Level", free: "Standard", pro: "Priority", enterprise: "Dedicated" }
   ]
 
   return (
-    <section className="py-24 relative overflow-hidden" id="pricing">
+    <section className="py-10 relative overflow-hidden" id="pricing">
       {/* Dark background with blue glow */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black via-slate-950 to-slate-900" />
-      <div className="absolute top-1/3 right-1/4 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl" />
-      <div className="absolute bottom-1/3 left-1/4 w-64 h-64 bg-blue-500/15 rounded-full blur-2xl" />
+      <div className="absolute inset-0 bg-gradient-to-b from-primary/10 via-primary/10 to-primary/20" />
+      <div className="absolute top-1/3 right-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
+      <div className="absolute bottom-1/3 left-1/4 w-64 h-64 bg-primary/15 rounded-full blur-2xl" />
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
@@ -94,18 +95,17 @@ const Pricing = () => {
           className="text-center mb-20"
         >
           <h2 className="text-4xl md:text-6xl font-bold mb-6">
-            <span className="bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 bg-clip-text text-transparent">
-              Choose Your Plan
+            <span className="bg-gradient-to-b from-primary-foreground to-primary bg-clip-text text-transparent">
+              Pricing That Fits Your Vision
             </span>
           </h2>
           <p className="text-xl text-slate-400 max-w-3xl mx-auto">
-            Professional production tools designed to scale with your creative ambitions. 
-            Start creating today with our comprehensive platform.
+            From your first script to a full-scale production, Storiara has a plan to power your story with cutting-edge AI.
           </p>
         </motion.div>
 
         {/* Pricing Cards */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-20">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-20 items-stretch">
           {plans.map((plan, index) => (
             <motion.div
               key={plan.name}
@@ -114,16 +114,16 @@ const Pricing = () => {
               transition={{ duration: 0.8, delay: index * 0.2 }}
               viewport={{ once: true }}
               whileHover={{ scale: 1.02, y: -10 }}
-              className={`relative bg-slate-900/60 backdrop-blur-xl border rounded-2xl p-8 h-full transform-style-3d transition-all duration-500 ${
+              className={`relative flex flex-col bg-slate-900/60 backdrop-blur-xl border rounded-2xl p-8 transform-style-3d transition-all duration-500 ${
                 plan.popular 
-                  ? 'border-blue-500/50 scale-105 shadow-lg shadow-blue-600/30' 
-                  : 'border-blue-600/20 hover:border-blue-500/40'
+                  ? 'border-primary/50 lg:scale-105 shadow-lg shadow-primary/30' 
+                  : 'border-primary/20 hover:border-primary/40'
               }`}
             >
               {plan.popular && (
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                  <div className="bg-gradient-to-r from-blue-600 to-blue-800 text-white px-6 py-2 rounded-full text-sm font-semibold flex items-center">
-                    <Star className="h-4 w-4 mr-1" />
+                  <div className="bg-gradient-to-r from-primary to-primary-dark text-white px-4 py-2 rounded-full text-sm font-semibold flex items-center">
+                    <TrendingUp className="h-4 w-4 mr-1" />
                     Most Popular
                   </div>
                 </div>
@@ -133,11 +133,11 @@ const Pricing = () => {
                 <h3 className="text-2xl font-bold text-slate-100 mb-2">
                   {plan.name}
                 </h3>
-                <p className="text-slate-400 mb-4">
+                <p className="text-slate-400 mb-4 h-10">
                   {plan.description}
                 </p>
                 <div className="mb-4">
-                  <span className="text-4xl font-bold bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">
+                  <span className="text-5xl font-bold bg-primary bg-clip-text text-transparent">
                     {plan.price}
                   </span>
                   {plan.period !== "Contact us" && (
@@ -148,7 +148,7 @@ const Pricing = () => {
                 </div>
               </div>
 
-              <div className="space-y-4 mb-8">
+              <div className="space-y-4 mb-8 flex-grow">
                 {plan.features.map((feature, featureIndex) => (
                   <motion.div
                     key={featureIndex}
@@ -158,7 +158,7 @@ const Pricing = () => {
                     viewport={{ once: true }}
                     className="flex items-center space-x-3"
                   >
-                    <Check className="h-5 w-5 text-blue-400 flex-shrink-0 mt-0.5" />
+                    <Check className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
                     <span className="text-slate-300">{feature}</span>
                   </motion.div>
                 ))}
@@ -179,16 +179,16 @@ const Pricing = () => {
               </div>
 
               <Button 
-                className={`w-full ${
+                className={`w-full mt-auto ${
                   plan.popular 
-                    ? 'bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-700 hover:to-blue-900 text-white shadow-lg shadow-blue-600/30' 
-                    : 'bg-slate-800 hover:bg-slate-700 text-slate-100 border border-blue-600/30 hover:border-blue-500/50'
+                    ? 'bg-gradient-to-r from-primary to-primary-dark hover:from-primary-light hover:to-primary-dark text-white shadow-lg shadow-primary/30' 
+                    : 'bg-slate-800 hover:bg-slate-700 text-slate-100 border border-primary/30 hover:border-primary/50'
                 }`}
                 size="lg"
                 asChild
               >
-                <Link href="https://app.storiara.com">
-                  {plan.price === "Custom" ? "Contact Sales" : "Get Started"}
+                <Link href={plan.buttonLink}>
+                  {plan.buttonText}
                 </Link>
               </Button>
             </motion.div>
@@ -204,18 +204,18 @@ const Pricing = () => {
           className="mb-16"
         >
           <h3 className="text-3xl font-bold text-center mb-12">
-            <span className="bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-b from-primary-foreground to-primary bg-clip-text text-transparent">
               Feature Comparison
             </span>
           </h3>
           
-          <div className="bg-slate-900/40 backdrop-blur-xl border border-blue-600/30 rounded-2xl p-8 overflow-x-auto">
-            <table className="w-full">
+          <div className="bg-slate-900/40 backdrop-blur-xl border border-primary/30 rounded-2xl p-8 overflow-x-auto">
+            <table className="w-full min-w-[600px]">
               <thead>
-                <tr className="border-b border-blue-600/20">
+                <tr className="border-b border-primary/20">
                   <th className="text-left py-4 px-4 font-semibold text-slate-100">Feature</th>
-                  <th className="text-center py-4 px-4 font-semibold text-slate-100">Creator</th>
-                  <th className="text-center py-4 px-4 font-semibold text-slate-100">Professional</th>
+                  <th className="text-center py-4 px-4 font-semibold text-slate-100">Free</th>
+                  <th className="text-center py-4 px-4 font-semibold text-slate-100">Pro</th>
                   <th className="text-center py-4 px-4 font-semibold text-slate-100">Enterprise</th>
                 </tr>
               </thead>
@@ -227,12 +227,12 @@ const Pricing = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ delay: index * 0.1 }}
                     viewport={{ once: true }}
-                    className="border-b border-blue-600/10"
+                    className="border-b border-primary/10"
                   >
                     <td className="py-4 px-4 text-slate-300">{item.feature}</td>
-                    <td className="py-4 px-4 text-center text-slate-400">{item.creator}</td>
-                    <td className="py-4 px-4 text-center text-blue-400 font-medium">{item.professional}</td>
-                    <td className="py-4 px-4 text-center text-blue-300 font-medium">{item.enterprise}</td>
+                    <td className="py-4 px-4 text-center text-slate-400">{item.free}</td>
+                    <td className="py-4 px-4 text-center text-primary font-medium">{item.pro}</td>
+                    <td className="py-4 px-4 text-center text-primary font-medium">{item.enterprise}</td>
                   </motion.tr>
                 ))}
               </tbody>
@@ -240,42 +240,8 @@ const Pricing = () => {
           </div>
         </motion.div>
 
-        {/* Bottom CTA */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1 }}
-          viewport={{ once: true }}
-          className="text-center"
-        >
-          <div className="bg-gradient-to-r from-blue-600/10 to-blue-800/10 border border-blue-600/30 rounded-2xl p-8 max-w-2xl mx-auto">
-            <h3 className="text-2xl font-bold text-slate-100 mb-4">
-              Ready to Transform Your Production?
-            </h3>
-            <p className="text-slate-400 mb-6">
-              Join thousands of creators who have streamlined their workflow with our platform.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-700 hover:to-blue-900 text-white px-8 py-3 rounded-lg font-semibold shadow-lg shadow-blue-600/30 transition-all duration-300"
-              >
-                <Link href="https://app.storiara.com" className="flex items-center justify-center">
-                  <Zap className="mr-2 h-5 w-5" />
-                  Start Free Trial
-                </Link>
-              </motion.button>
-              <Button 
-                variant="outline" 
-                size="lg"
-                className="border-blue-600/50 hover:border-blue-500 hover:bg-blue-600/10 text-blue-400 hover:text-blue-300"
-              >
-                Schedule Demo
-              </Button>
-            </div>
-          </div>
-        </motion.div>
+        
+          
       </div>
     </section>
   )

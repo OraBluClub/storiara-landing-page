@@ -13,9 +13,9 @@
     --popover: 230 20% 8%;
     --popover-foreground: 230 100% 97.5%;
 
-    --primary: 231 76% 58.2%; /* #455FE5 */
+    --primary: 230 75% 58%; /* #455FE5 */
     --primary-dark: 231 76% 40%; /* Darker shade of primary for gradient */
-    --primary-foreground: 230 100% 97.5%; /* #F2F4FF */
+    --primary-foreground: 231 100% 97%; /* #F2F4FF */
 
     --secondary: 230 20% 15%;
     --secondary-foreground: 230 100% 97.5%;
