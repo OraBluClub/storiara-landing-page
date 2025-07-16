@@ -114,7 +114,7 @@ const Features = () => {
         >
           <h2 className="text-4xl md:text-6xl font-bold mb-6">
             <span className="bg-gradient-to-b from-primary-foreground to-primary bg-clip-text text-transparent">
-              An Entire Studio in Your Browser
+              Your Instant Production Plan
             </span>
           </h2>
           <p className="text-xl text-slate-400 max-w-3xl mx-auto">

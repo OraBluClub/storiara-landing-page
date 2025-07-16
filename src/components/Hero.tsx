@@ -95,14 +95,14 @@ const Hero = () => {
         ))}
 
         {/* Main Content */}
-        <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="relative z-10 max-w-6xl w-full max-w-full mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.5 }}
             className="perspective-2000"
           >
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-8 transform-style-3d">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-8 transform-style-3d break-words whitespace-normal">
               <motion.span 
                 className="block bg-gradient-to-r from-primary-foreground to-primary bg-clip-text text-transparent"
                 initial={{ opacity: 0, x: -100 }}
@@ -126,7 +126,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 2 }}
-            className="text-xl md:text-2xl text-slate-400 mb-12 max-w-4xl mx-auto leading-relaxed"
+            className="text-xl md:text-2xl text-slate-400 mb-12 max-w-4xl mx-auto leading-relaxed break-words whitespace-normal"
           >
             Built by filmmakers, for filmmakers. With just your script, we instantly break down plotholes, map characters, manage cast, track gear, build shotlists, schedule scenes, and craft your visual style.
           </motion.p>
