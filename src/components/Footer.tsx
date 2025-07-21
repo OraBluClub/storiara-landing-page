@@ -25,7 +25,7 @@ const Footer = () => {
     ],
     Company: [
       { name: 'About', href: '#team' },
-      { name: 'Contact', href: 'mailto:support@storiara.com' },
+      { name: 'Contact', href: 'mailto:storiaraCRSO@gmail.com' },
     ],
     Legal: [
       { name: 'Privacy Policy', href: 'https://docs.google.com/document/d/1vlXMkqixBIiUM7J7ppdfu_yRQtIqMqZ7E8Bcyj8cHHw/edit?usp=sharing' },
