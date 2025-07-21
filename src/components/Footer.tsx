@@ -35,7 +35,7 @@ const Footer = () => {
   const socialLinks = [
     { name: 'Instagram', icon: InstagramIcon, href: 'https://www.instagram.com/madewithstoriara' },
     { name: 'LinkedIn', icon: LinkedinIcon, href: 'https://www.linkedin.com/company/storiara/' },
-    { name: 'X', icon: RiTwitterXLine, href: 'https://x.com/storiaraai' }
+    { name: 'X', icon: RiTwitterXLine, href: 'https://x.com/madewithstoriara' }
   ]
 
   return (
