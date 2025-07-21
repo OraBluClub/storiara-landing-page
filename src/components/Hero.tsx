@@ -36,13 +36,13 @@ const Hero = () => {
     { Icon: Camera, delay: 0.8, x: "20%", y: "60%" },
   ]
   
-  const logos = [
+  /*const logos = [
     { name: 'Paramount', src: getAssetPath('companies/paramount.svg') },
     { name: 'Warner Bros', src: getAssetPath('companies/warner.svg') },
     { name: 'Snap', src: getAssetPath('companies/snap.svg') },
     { name: 'Sphere', src: getAssetPath('companies/sphere.svg') },
     { name: 'Character.ai', src: getAssetPath('companies/character.svg') },
-  ];
+  ];*/
 
   return (
     <div ref={heroRef} className="relative">
