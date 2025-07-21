@@ -3,11 +3,13 @@
 import { motion } from 'framer-motion'
 import { 
   Clapperboard,
-  Wand2
+  InstagramIcon,
+  LinkedinIcon,
 } from 'lucide-react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { getAssetPath } from '@/lib/utils'
+import { RiTwitterXLine } from 'react-icons/ri'
 
 const Footer = () => {
   const footerLinks = {
@@ -25,15 +27,15 @@ const Footer = () => {
       { name: 'Contact', href: 'mailto:support@storiara.com' },
     ],
     Legal: [
-      { name: 'Privacy Policy', href: '#' },
-      { name: 'Terms of Service', href: '#' },
+      { name: 'Privacy Policy', href: 'https://docs.google.com/document/d/1vlXMkqixBIiUM7J7ppdfu_yRQtIqMqZ7E8Bcyj8cHHw/edit?usp=sharing' },
+      { name: 'Terms of Service', href: 'https://docs.google.com/document/d/1gEXNtQLFng0QPa4iZi3o8kyLf37Prf6tTWq0rqE-OI8/edit?usp=sharing' },
     ]
   }
 
   const socialLinks = [
-    { name: 'Instagram', icon: Wand2, href: 'https://www.instagram.com/orabluclub' },
-    { name: 'LinkedIn', icon: Wand2, href: 'https://www.linkedin.com/company/orabluclub/' },
-    { name: 'YouTube', icon: Wand2, href: 'https://www.youtube.com/@OraBluClub' }
+    { name: 'Instagram', icon: InstagramIcon, href: 'https://www.instagram.com/madewithstoriara' },
+    { name: 'LinkedIn', icon: LinkedinIcon, href: 'https://www.linkedin.com/company/storiara/' },
+    { name: 'X', icon: RiTwitterXLine, href: 'https://x.com/storiaraai' }
   ]
 
   return (
