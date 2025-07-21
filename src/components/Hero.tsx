@@ -170,7 +170,7 @@ const Hero = () => {
           </motion.div>
         
           {/* Logo Ticker */}
-          <motion.div
+          {/*<motion.div
             className="mt-10 w-full"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
@@ -191,7 +191,6 @@ const Hero = () => {
                   repeat: Infinity,
                 }}
               >
-                {/* Render logos twice for seamless loop */}
                 {[...logos, ...logos].map((logo, index) => (
                   <div key={index} className="flex-shrink-0 mx-10" style={{ width: '120px' }}>
                     <Image
@@ -205,7 +204,7 @@ const Hero = () => {
                 ))}
               </motion.div>
             </div>
-          </motion.div>
+          </motion.div>*/}
         </div>
       </div>
 
