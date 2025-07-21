@@ -8,11 +8,27 @@ const dmSans = DM_Sans({
 })
 
 export const metadata = {
-  title: 'Storiara - AI Pre-Production',
-  description: 'Storiara is your AI pre-production partner. Automate tedious tasks and focus on what matters: telling a great story.',
+  title: 'Storiara - Script to Screen Pre-Production',
+  description: 'With just your script, we instantly break down plotholes, map characters, manage cast, track gear, build shotlists, schedule scenes, and craft your visual style.',
   icons: {
     icon: '/icons/iconfull.svg',
     apple: '/icons/iconfull.svg',
+  },
+  openGraph: {
+    title: 'Storiara - Script to Screen Pre-Production',
+    description: 'With just your script, we instantly break down plotholes, map characters, manage cast, track gear, build shotlists, schedule scenes, and craft your visual style.',
+    url: 'https://storiara.com',
+    siteName: 'Storiara',
+    locale: 'en_US',
+    type: 'website',
+    images: [
+      {
+        url: '/assets/poster.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Storiara Poster',
+      },
+    ],
   },
 }
 
