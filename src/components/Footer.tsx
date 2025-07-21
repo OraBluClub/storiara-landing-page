@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 import { 
   Clapperboard,
+  FacebookIcon,
   InstagramIcon,
   LinkedinIcon,
 } from 'lucide-react'
@@ -33,6 +34,7 @@ const Footer = () => {
   }
 
   const socialLinks = [
+    {name: 'Facebook', icon: FacebookIcon, href: 'https://www.facebook.com/storiara'},
     { name: 'Instagram', icon: InstagramIcon, href: 'https://www.instagram.com/madewithstoriara' },
     { name: 'LinkedIn', icon: LinkedinIcon, href: 'https://www.linkedin.com/company/storiara/' },
     { name: 'X', icon: RiTwitterXLine, href: 'https://x.com/storiaraai' }
