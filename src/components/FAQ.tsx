@@ -27,7 +27,7 @@ const FAQ = () => {
     },
     {
       question: "What's the difference between the Free and Pro plans?",
-      answer: "The Free plan is designed to give you a taste of our AI's power, allowing you to create one story with a limited number of AI calls. The Pro plan unlocks the full platform, offering unlimited stories, a high volume of AI calls, and access to all our premium generative features like AI storyboards, character art, and logos."
+      answer: "The Free plan is designed to give you a taste of our generative capabilities, allowing you to create up to three story with a limited number of AI calls. The Pro plan unlocks the full platform, offering unlimited stories, a high volume of AI calls, and access to all our premium generative features like AI storyboards, character art, and logos."
     },
     {
       question: "What can I generate with the AI tools?",
@@ -144,7 +144,7 @@ const FAQ = () => {
                 whileTap={{ scale: 0.95 }}
                 className="bg-gradient-to-r from-primary to-primary-dark hover:from-primary-light hover:to-primary-dark text-white px-6 py-3 rounded-lg font-semibold shadow-lg shadow-primary/30 transition-all duration-300"
               >
-                <Link href="mailto:support@storiara.com" className="flex items-center justify-center">
+                <Link href="mailto:storiaraCRSO@gmail.com" className="flex items-center justify-center">
                   <Mail className="mr-2 h-5 w-5" />
                   Contact Support
                 </Link>
