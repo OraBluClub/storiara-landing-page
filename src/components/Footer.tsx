@@ -145,17 +145,16 @@ const Footer = () => {
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-3 md:ml-8">
-                <input
-                  type="email"
-                  placeholder="Enter your email"
-                  className="px-4 py-3 bg-slate-800 border border-primary/30 rounded-lg text-slate-100 placeholder-slate-500 focus:outline-none focus:border-primary transition-colors duration-300"
-                />
+                
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
+                  onClick={() => {
+                    window.location.href = 'https://app.storiara.com/signup'
+                  }}
                   className="bg-gradient-to-r from-primary to-primary-dark hover:from-primary-light hover:to-primary-dark text-white px-6 py-3 rounded-lg font-semibold shadow-lg shadow-primary/30 transition-all duration-300 whitespace-nowrap"
                 >
-                  Subscribe
+                  Sign Up For Updates
                 </motion.button>
               </div>
             </div>
