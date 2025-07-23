@@ -159,13 +159,15 @@ const Hero = () => {
               size="xl"
               className="group border-primary/50 hover:border-primary-light hover:bg-primary/10 text-primary hover:text-primary-light"
             >
-              <motion.div
-                whileHover={{ scale: 1.05 }}
-                className="flex items-center"
-              >
-                <Film className="mr-2 h-6 w-6 group-hover:rotate-12 transition-transform duration-300" />
-                Schedule A Demo
-              </motion.div>
+              <Link href="https://calendar.app.google/E8SGDLDjiMTFvECR7">
+                <motion.div
+                  whileHover={{ scale: 1.05 }}
+                  className="flex items-center"
+                >
+                  <Film className="mr-2 h-6 w-6 group-hover:rotate-12 transition-transform duration-300" />
+                  Schedule A Demo
+                </motion.div>
+              </Link>
             </Button>
           </motion.div>
         
