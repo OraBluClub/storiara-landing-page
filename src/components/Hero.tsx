@@ -159,7 +159,7 @@ const Hero = () => {
               size="xl"
               className="group border-primary/50 hover:border-primary-light hover:bg-primary/10 text-primary hover:text-primary-light"
             >
-              <Link href="https://calendar.app.google/E8SGDLDjiMTFvECR7">
+              <Link href="https://cal.com/nickharty/storiara">
                 <motion.div
                   whileHover={{ scale: 1.05 }}
                   className="flex items-center"
