@@ -90,6 +90,7 @@ const Features = () => {
 
   const integrations = [
     { name: 'Google Drive', src: getAssetPath('integrations/drive.webp') },
+    { name: 'PDF', src: getAssetPath('integrations/pdf.png') },
     { name: 'Dropbox', src: getAssetPath('integrations/dropbox.png') },
     { name: 'Final Draft', src: getAssetPath('integrations/final-draft.png') },
     { name: 'Google Calendar', src: getAssetPath('integrations/calendar.webp') },
