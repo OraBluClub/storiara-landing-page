@@ -22,7 +22,7 @@ const Pricing = () => {
       ],
       limitations: [
         "3 stories",
-        "100 AI calls per month",
+        "10 AI calls per month",
         "Limited feature access"
       ],
       buttonText: "Start for Free",
