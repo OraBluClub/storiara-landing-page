@@ -19,6 +19,14 @@ const Footer = () => {
       { name: 'Pricing', href: '#pricing' },
       { name: 'FAQ', href: '#faq' },
     ],
+    Compare: [
+      { name: 'vs StudioBinder', href: '/compare/studiobinder' },
+      { name: 'vs Movie Magic', href: '/compare/movie-magic' },
+      { name: 'vs Filmustage', href: '/compare/filmustage' },
+      { name: 'vs Celtx', href: '/compare/celtx' },
+      { name: 'vs Gorilla', href: '/compare/gorilla-scheduling' },
+      { name: 'vs Yamdu', href: '/compare/yamdu' },
+    ],
     Resources: [
       { name: 'Blog', href: '#' },
       { name: 'Community', href: '#' },
@@ -92,7 +100,7 @@ const Footer = () => {
             </motion.div>
 
             {/* Right Column - Links */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
               {Object.entries(footerLinks).map(([category, links], categoryIndex) => (
                 <motion.div
                   key={category}
