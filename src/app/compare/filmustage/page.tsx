@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Check, X, Zap, Brain, DollarSign, Users, Clock, Sparkles, Target } from 'lucide-react'
+import { Check, X, Zap, Brain, DollarSign, Users, Sparkles, Target } from 'lucide-react'
 import Link from 'next/link'
 import Image from 'next/image'
 import Navigation from '@/components/Navigation'
@@ -77,7 +77,6 @@ const FilmustageComparison = () => {
         {/* Dark background with subtle blue glow */}
         <div className="absolute inset-0 bg-gradient-to-b from-black via-primary/10 to-primary/5" />
         <div className="absolute top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
-        <div className="absolute inset-0 bg-[linear-gradient(45deg,transparent_25%,rgba(69,95,229,0.02)_25%,rgba(69,95,229,0.02)_50%,transparent_50%,transparent_75%,rgba(69,95,229,0.02)_75%)] bg-[length:40px_40px]" />
         
         <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
@@ -237,7 +236,7 @@ const FilmustageComparison = () => {
               <Sparkles className="h-8 w-8 text-primary mx-auto mb-3" />
               <h3 className="text-base font-bold text-white mb-2">Visual AI Generation</h3>
               <p className="text-slate-400 text-xs">
-                Generate character images, storyboards, logos, and marketing materials that Filmustage simply can't create.
+                Generate character images, storyboards, logos, and marketing materials that Filmustage simply can&apos;t create.
               </p>
             </motion.div>
 
@@ -287,7 +286,7 @@ const FilmustageComparison = () => {
       </section>
 
       {/* Head-to-Head Stats */}
-      <section className="py-16 relative">
+      <section className="py-16 relative bg-gradient-to-b from-transparent via-primary/5 to-primary/10">
         <div className="absolute top-0 left-1/4 transform w-48 h-48 bg-primary/5 rounded-full blur-2xl" />
         <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div

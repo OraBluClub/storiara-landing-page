@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Check, X, Zap, Brain, DollarSign, Users, Clock, Sparkles, Globe, Target } from 'lucide-react'
+import { Check, X, Zap, Brain, DollarSign, Sparkles, Target } from 'lucide-react'
 import Link from 'next/link'
 import Image from 'next/image'
 import Navigation from '@/components/Navigation'
@@ -90,7 +90,6 @@ const YamduComparison = () => {
         {/* Dark background with subtle blue glow */}
         <div className="absolute inset-0 bg-gradient-to-b from-black via-primary/10 to-primary/5" />
         <div className="absolute top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
-        <div className="absolute inset-0 bg-[linear-gradient(45deg,transparent_25%,rgba(69,95,229,0.02)_25%,rgba(69,95,229,0.02)_50%,transparent_50%,transparent_75%,rgba(69,95,229,0.02)_75%)] bg-[length:40px_40px]" />
         
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
@@ -166,7 +165,7 @@ const YamduComparison = () => {
               AI Innovation vs Traditional Management
             </h2>
             <p className="text-slate-400 max-w-2xl mx-auto">
-              See how AI capabilities compare to Yamdu's traditional approach
+              See how AI capabilities compare to Yamdu&apos;s traditional approach
             </p>
           </motion.div>
 
@@ -317,7 +316,7 @@ const YamduComparison = () => {
               >
                 <h4 className="text-2xl font-bold text-green-400 mb-2">You Save $1,068+ Per Year</h4>
                 <p className="text-slate-300">
-                  That's enough savings to fund your entire production budget while getting advanced AI features that Yamdu doesn't offer.
+                  That&apos;s enough savings to fund your entire production budget while getting advanced AI features that Yamdu doesn&apos;t offer.
                 </p>
               </motion.div>
             </motion.div>
@@ -401,7 +400,7 @@ const YamduComparison = () => {
       </section>
 
       {/* Why Choose AI */}
-      <section className="py-16 relative">
+      <section className="py-16 relative bg-gradient-to-b from-transparent via-primary/5 to-primary/10">
         <div className="absolute top-0 left-1/4 transform w-48 h-48 bg-primary/5 rounded-full blur-2xl" />
         <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
@@ -441,7 +440,7 @@ const YamduComparison = () => {
               <Brain className="h-12 w-12 text-primary mx-auto mb-6" />
               <h3 className="text-xl font-bold text-white mb-4">AI-Powered Intelligence</h3>
               <p className="text-slate-400">
-                Get intelligent script analysis, automated breakdowns, and AI-generated visuals that Yamdu's traditional approach can't match.
+                Get intelligent script analysis, automated breakdowns, and AI-generated visuals that Yamdu&apos;s traditional approach can&apos;t match.
               </p>
             </motion.div>
 
@@ -470,7 +469,7 @@ const YamduComparison = () => {
             <div className="bg-gradient-to-r from-primary/20 to-primary/10 border border-primary/30 rounded-2xl p-8 max-w-2xl mx-auto">
               <h3 className="text-2xl font-bold text-white mb-4">Ready to Save $1,000+ Per Year?</h3>
               <p className="text-slate-300 mb-6">
-                Join filmmakers who've switched from expensive per-project pricing to unlimited AI-powered production with Storiara.
+                Join filmmakers who&apos;ve switched from expensive per-project pricing to unlimited AI-powered production.
               </p>
               <Link
                 href="https://app.storiara.com/signup"

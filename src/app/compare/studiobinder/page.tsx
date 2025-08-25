@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Check, X, Zap, Brain, DollarSign, Users, Clock, Sparkles } from 'lucide-react'
+import { Check, X, Zap, Brain, DollarSign, Clock, Sparkles } from 'lucide-react'
 import Link from 'next/link'
 import Image from 'next/image'
 import Navigation from '@/components/Navigation'
@@ -90,7 +90,6 @@ const StudioBinderComparison = () => {
         {/* Dark background with subtle blue glow */}
         <div className="absolute inset-0 bg-gradient-to-b from-black via-primary/10 to-primary/5" />
         <div className="absolute top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
-        <div className="absolute inset-0 bg-[linear-gradient(45deg,transparent_25%,rgba(69,95,229,0.02)_25%,rgba(69,95,229,0.02)_50%,transparent_50%,transparent_75%,rgba(69,95,229,0.02)_75%)] bg-[length:40px_40px]" />
         
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
@@ -166,7 +165,7 @@ const StudioBinderComparison = () => {
               Feature-by-Feature Comparison
             </h2>
             <p className="text-slate-400 max-w-2xl mx-auto">
-              See how AI-powered approach compares to StudioBinder's traditional methods
+              See how AI-powered approach compares to StudioBinder&apos;s traditional methods
             </p>
           </motion.div>
 
@@ -235,7 +234,7 @@ const StudioBinderComparison = () => {
               Pricing That Makes Sense
             </h2>
             <p className="text-slate-400 text-lg max-w-3xl mx-auto">
-              Get more features for less money with Storiara's AI-powered efficiency
+                              Get more features for less money with AI-powered efficiency
             </p>
           </motion.div>
 
@@ -317,7 +316,7 @@ const StudioBinderComparison = () => {
             <div className="bg-gradient-to-r from-primary/20 to-primary/10 border border-primary/30 rounded-2xl p-8 max-w-2xl mx-auto">
               <h3 className="text-2xl font-bold text-white mb-4">Save 320% on Your Production Budget</h3>
               <p className="text-slate-300 mb-6">
-                Switch from StudioBinder's $42/month to Storiara's $9.99/month and get AI-powered features that aren't available anywhere else.
+                Switch from StudioBinder&apos;s $42/month to $9.99/month and get AI-powered features that aren&apos;t available anywhere else.
               </p>
               <Link
                 href="https://app.storiara.com/signup"
@@ -332,7 +331,7 @@ const StudioBinderComparison = () => {
       </section>
 
       {/* Why Switch Section */}
-      <section className="py-16 relative">
+      <section className="py-16 relative bg-gradient-to-b from-transparent via-primary/5 to-primary/10">
         <div className="absolute top-0 left-1/4 transform w-48 h-48 bg-primary/5 rounded-full blur-2xl" />
         <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
@@ -358,7 +357,7 @@ const StudioBinderComparison = () => {
               <Clock className="h-12 w-12 text-primary mx-auto mb-6" />
               <h3 className="text-xl font-bold text-white mb-4">Time Savings</h3>
               <p className="text-slate-400">
-                What takes weeks in StudioBinder takes minutes with Storiara's AI. 95% faster script breakdowns mean more time for creativity.
+                What takes weeks in StudioBinder takes minutes with AI. 95% faster script breakdowns mean more time for creativity.
               </p>
             </motion.div>
 
@@ -372,7 +371,7 @@ const StudioBinderComparison = () => {
               <DollarSign className="h-12 w-12 text-primary mx-auto mb-6" />
               <h3 className="text-xl font-bold text-white mb-4">Cost Effective</h3>
               <p className="text-slate-400">
-                Save over $380/year compared to StudioBinder while getting advanced AI features that traditional tools simply don't have.
+                Save over $380/year compared to StudioBinder while getting advanced AI features that traditional tools simply don&apos;t have.
               </p>
             </motion.div>
 
@@ -386,7 +385,7 @@ const StudioBinderComparison = () => {
               <Sparkles className="h-12 w-12 text-primary mx-auto mb-6" />
               <h3 className="text-xl font-bold text-white mb-4">AI Advantage</h3>
               <p className="text-slate-400">
-                Generate character images, storyboards, and marketing materials instantly. StudioBinder simply can't compete with AI creativity.
+                Generate character images, storyboards, and marketing materials instantly. StudioBinder simply can&apos;t compete with AI creativity.
               </p>
             </motion.div>
           </div>

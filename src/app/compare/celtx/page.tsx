@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Check, X, Zap, Brain, DollarSign, Users, Clock, Sparkles, Edit, FileText } from 'lucide-react'
+import { Check, X, Zap, Brain, Clock, Sparkles } from 'lucide-react'
 import Link from 'next/link'
 import Image from 'next/image'
 import Navigation from '@/components/Navigation'
@@ -68,18 +68,7 @@ const CeltxComparison = () => {
     }
   ]
 
-  const pricingComparison = {
-    storiara: {
-      free: { price: '$0', features: ['3 stories', '10 AI calls', 'AI script analysis', 'Modern interface'] },
-      pro: { price: '$9.99', features: ['Unlimited stories', '1,000 AI calls', 'Full AI suite', 'Visual generation'] },
-      enterprise: { price: 'Custom', features: ['Unlimited everything', 'Custom integrations', 'White-label'] }
-    },
-    celtx: {
-      free: { price: 'Limited', features: ['Very basic features', 'Limited projects', 'Watermarks'] },
-      writer: { price: '$9.99', features: ['Basic scriptwriting', 'Limited pre-production', 'No AI'] },
-      pro: { price: '$20+', features: ['Full features', 'More collaboration', 'Still no AI'] }
-    }
-  }
+
 
   return (
     <div className="min-h-screen bg-black">
@@ -90,7 +79,6 @@ const CeltxComparison = () => {
         {/* Dark background with subtle blue glow */}
         <div className="absolute inset-0 bg-gradient-to-b from-black via-primary/10 to-primary/5" />
         <div className="absolute top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
-        <div className="absolute inset-0 bg-[linear-gradient(45deg,transparent_25%,rgba(69,95,229,0.02)_25%,rgba(69,95,229,0.02)_50%,transparent_50%,transparent_75%,rgba(69,95,229,0.02)_75%)] bg-[length:40px_40px]" />
         
         <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
@@ -369,7 +357,7 @@ const CeltxComparison = () => {
       </section>
 
       {/* Why Switch Section */}
-      <section className="py-16 relative">
+      <section className="py-16 relative bg-gradient-to-b from-transparent via-primary/5 to-primary/10">
         <div className="absolute top-0 left-1/4 transform w-48 h-48 bg-primary/5 rounded-full blur-2xl" />
         <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div

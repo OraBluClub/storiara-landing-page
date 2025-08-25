@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Check, X, Zap, Brain, DollarSign, Users, Clock, Sparkles } from 'lucide-react'
+import { Check, X, Zap, Brain, DollarSign, Users, Sparkles } from 'lucide-react'
 import Link from 'next/link'
 import Image from 'next/image'
 import Navigation from '@/components/Navigation'
@@ -90,7 +90,6 @@ const MovieMagicComparison = () => {
         {/* Dark background with subtle blue glow */}
         <div className="absolute inset-0 bg-gradient-to-b from-black via-primary/10 to-primary/5" />
         <div className="absolute top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
-        <div className="absolute inset-0 bg-[linear-gradient(45deg,transparent_25%,rgba(69,95,229,0.02)_25%,rgba(69,95,229,0.02)_50%,transparent_50%,transparent_75%,rgba(69,95,229,0.02)_75%)] bg-[length:40px_40px]" />
         
         <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
@@ -165,7 +164,7 @@ const MovieMagicComparison = () => {
               Modern AI vs Legacy Desktop Software
             </h2>
             <p className="text-slate-400 max-w-2xl mx-auto">
-              See why it's time to move beyond Movie Magic's outdated approach
+              See why it&apos;s time to move beyond Movie Magic&apos;s outdated approach
             </p>
           </motion.div>
 
@@ -339,7 +338,7 @@ const MovieMagicComparison = () => {
       </section>
 
       {/* Why Switch Section */}
-      <section className="py-20">
+      <section className="py-20 bg-gradient-to-b from-transparent via-primary/5 to-primary/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0 }}
@@ -349,7 +348,7 @@ const MovieMagicComparison = () => {
             className="text-center mb-16"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-              It's Time to Leave the 90s Behind
+              It&apos;s Time to Leave the 90s Behind
             </h2>
           </motion.div>
 
@@ -364,7 +363,7 @@ const MovieMagicComparison = () => {
               <Brain className="h-12 w-12 text-primary mx-auto mb-6" />
               <h3 className="text-xl font-bold text-white mb-4">AI Intelligence</h3>
               <p className="text-slate-400">
-                While Movie Magic requires manual work, Storiara's AI handles script analysis, breakdowns, and visual generation automatically.
+                While Movie Magic requires manual work, AI handles script analysis, breakdowns, and visual generation automatically.
               </p>
             </motion.div>
 
@@ -378,7 +377,7 @@ const MovieMagicComparison = () => {
               <Users className="h-12 w-12 text-primary mx-auto mb-6" />
               <h3 className="text-xl font-bold text-white mb-4">Modern Collaboration</h3>
               <p className="text-slate-400">
-                Movie Magic locks you to one desktop. Storiara works anywhere with real-time collaboration and cloud synchronization.
+                Movie Magic locks you to one desktop. AI works anywhere with real-time collaboration and cloud synchronization.
               </p>
             </motion.div>
 
@@ -392,7 +391,7 @@ const MovieMagicComparison = () => {
               <DollarSign className="h-12 w-12 text-primary mx-auto mb-6" />
               <h3 className="text-xl font-bold text-white mb-4">Better Value</h3>
               <p className="text-slate-400">
-                Get more features, better support, and modern AI capabilities for 50x less than Movie Magic's outdated pricing model.
+                Get more features, better support, and modern AI capabilities for 50x less than Movie Magic&apos;s outdated pricing model.
               </p>
             </motion.div>
           </div>

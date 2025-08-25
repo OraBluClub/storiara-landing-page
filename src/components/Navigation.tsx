@@ -21,11 +21,11 @@ const Navigation = () => {
   }, [])
 
   const navItems = [
-    { name: 'Features', href: '#features' },
-    { name: 'Platform', href: '#platform' },
-    { name: 'Team', href: '#team' },
-    { name: 'Pricing', href: '#pricing' },
-    { name: 'FAQ', href: '#faq' },
+    { name: 'Features', href: '/#features' },
+    { name: 'Platform', href: '/#platform' },
+    { name: 'Team', href: '/#team' },
+    { name: 'Pricing', href: '/#pricing' },
+    { name: 'FAQ', href: '/#faq' },
   ]
 
   return (
