@@ -66,8 +66,8 @@ const Pricing = () => {
         "White-label solutions"
       ],
       limitations: [],
-      buttonText: "Contact Sales",
-      buttonLink: "mailto:storiaraCRSO@gmail.com"
+      buttonText: "Book A Demo",
+      buttonLink: "https://cal.com/nickharty/storiara"
     }
   ]
 
