@@ -71,7 +71,7 @@ const MovieMagicComparison = () => {
   const pricingComparison = {
     storiara: {
       free: { price: '$0', features: ['3 stories', '10 AI calls', 'Basic analysis', 'Modern interface'] },
-      pro: { price: '$9.99', features: ['Unlimited stories', '1,000 AI calls', 'Full AI suite', 'Cloud-based'] },
+      pro: { price: '$9.99', originalPrice: '$19.99', features: ['Unlimited stories', '1,000 AI calls', 'Full AI suite', 'Cloud-based'] },
       enterprise: { price: 'Custom', features: ['Unlimited everything', 'Custom integrations', 'White-label'] }
     },
     moviemagic: {

@@ -28,7 +28,7 @@ const YamduComparison = () => {
       feature: 'Affordable Individual Plans',
       storiara: true,
       yamdu: false,
-      storiaraDetail: '$9.99/month for unlimited projects with full AI features',
+      storiaraDetail: '$9.99/month early bird (was $19.99) for unlimited projects with full AI features',
       yamduDetail: '$33-350/month per project, expensive for independent creators'
     },
     {
@@ -71,7 +71,7 @@ const YamduComparison = () => {
   const pricingComparison = {
     storiara: {
       free: { price: '$0', features: ['3 stories', '10 AI calls', 'AI analysis', 'Plot consistency'] },
-      pro: { price: '$9.99', features: ['Unlimited stories', '1,000 AI calls', 'Visual generation', 'Full AI suite'] },
+      pro: { price: '$9.99', originalPrice: '$19.99', features: ['Unlimited stories', '1,000 AI calls', 'Visual generation', 'Full AI suite'] },
       enterprise: { price: 'Custom', features: ['Unlimited everything', 'Custom integrations', 'White-label'] }
     },
     yamdu: {
@@ -132,7 +132,7 @@ const YamduComparison = () => {
                   <DollarSign className="h-5 w-5 text-primary mr-2" />
                   <span className="text-primary font-semibold text-sm">10x Better Value</span>
                 </div>
-                <p className="text-slate-400 text-xs">$9.99 vs $33-350/project</p>
+                <p className="text-slate-400 text-xs">$9.99 early bird vs $33-350/project</p>
               </motion.div>
               
               <motion.div

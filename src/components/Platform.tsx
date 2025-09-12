@@ -13,7 +13,7 @@ const Platform = () => {
     },
     {
       title: "Instant Pre-Production", 
-      description: "Automate weeks of work. Generate comprehensive breakdowns, character sheets, location lists, and prop requirements in seconds.",
+      description: "Accelerate your pre-production workflow. Generate comprehensive breakdowns, character sheets, location lists, and prop requirements in seconds, giving you more time to focus on creative decisions.",
       icon: Rocket,
       stats: "95% Faster Breakdowns"
     },
@@ -60,11 +60,11 @@ const Platform = () => {
         >
           <h2 className="text-4xl md:text-6xl font-bold mb-6">
             <span className="bg-gradient-to-b from-primary-foreground to-primary bg-clip-text text-transparent">
-              Your Unfair Advantage
+              Your Creative Edge
             </span>
           </h2>
           <p className="text-xl text-slate-400 max-w-3xl mx-auto">
-            Our platform combines deep industry knowledge with cutting-edge AI to give you unparalleled speed, creativity, and control over your production.
+            Our platform amplifies your creative vision with intelligent tools that accelerate your workflow, enhance your storytelling, and bring your ideas to life faster than ever before.
           </p>
         </motion.div>
 

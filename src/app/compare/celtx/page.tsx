@@ -35,7 +35,7 @@ const CeltxComparison = () => {
       feature: 'Affordable Pro Tier',
       storiara: true,
       celtx: false,
-      storiaraDetail: '$9.99/month with unlimited projects and AI features',
+      storiaraDetail: '$9.99/month early bird (was $19.99) with unlimited projects and AI features',
       celtxDetail: '$9.99 minimum but limited features, full suite much more expensive'
     },
     {

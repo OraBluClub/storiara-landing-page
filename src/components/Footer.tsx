@@ -27,10 +27,6 @@ const Footer = () => {
       { name: 'vs Gorilla', href: '/compare/gorilla-scheduling' },
       { name: 'vs Yamdu', href: '/compare/yamdu' },
     ],
-    Resources: [
-      { name: 'Blog', href: '#' },
-      { name: 'Community', href: '#' },
-    ],
     Company: [
       { name: 'About', href: '#team' },
       { name: 'Contact', href: 'mailto:storiaraCRSO@gmail.com' },

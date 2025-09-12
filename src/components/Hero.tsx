@@ -109,7 +109,7 @@ const Hero = () => {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 1, delay: 0.8 }}
               >
-                From Script to Screen,
+                From Script to Shoot,
               </motion.span>
               <motion.span
                 className="block bg-gradient-to-r from-primary-foreground to-primary bg-clip-text leading-tight text-transparent"

@@ -71,7 +71,7 @@ const StudioBinderComparison = () => {
   const pricingComparison = {
     storiara: {
       free: { price: '$0', features: ['3 stories', '10 AI calls', 'Basic analysis'] },
-      pro: { price: '$9.99', features: ['Unlimited stories', '1,000 AI calls', 'Full AI suite'] },
+      pro: { price: '$9.99', originalPrice: '$19.99', features: ['Unlimited stories', '1,000 AI calls', 'Full AI suite'] },
       enterprise: { price: 'Custom', features: ['Unlimited everything', 'Custom integrations', 'White-label'] }
     },
     studiobinder: {

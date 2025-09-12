@@ -71,7 +71,7 @@ const GorillaSchedulingComparison = () => {
   const pricingComparison = {
     storiara: {
       free: { price: '$0', features: ['3 stories', '10 AI calls', 'Cloud-based', 'Modern interface'] },
-      pro: { price: '$9.99', features: ['Unlimited stories', '1,000 AI calls', 'Full AI suite', 'All features included'] },
+      pro: { price: '$9.99', originalPrice: '$19.99', features: ['Unlimited stories', '1,000 AI calls', 'Full AI suite', 'All features included'] },
       enterprise: { price: 'Custom', features: ['Unlimited everything', 'Custom integrations', 'White-label'] }
     },
     gorilla: {

@@ -35,7 +35,7 @@ const FilmustageComparison = () => {
       feature: 'Affordable Individual Plans',
       storiara: true,
       filmustage: false,
-      storiaraDetail: '$9.99/month for unlimited projects and full AI suite',
+      storiaraDetail: '$9.99/month early bird (was $19.99) for unlimited projects and full AI suite',
       filmustageDetail: 'Enterprise-focused pricing, expensive for indie filmmakers'
     },
     {
@@ -130,7 +130,7 @@ const FilmustageComparison = () => {
                   <DollarSign className="h-5 w-5 text-primary mr-2" />
                   <span className="text-primary font-semibold text-sm">Indie-Friendly</span>
                 </div>
-                <p className="text-slate-400 text-xs">$9.99/month vs Enterprise pricing</p>
+                <p className="text-slate-400 text-xs">$9.99/month early bird vs Enterprise pricing</p>
               </motion.div>
             </div>
           </motion.div>
@@ -338,7 +338,7 @@ const FilmustageComparison = () => {
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="text-slate-300 text-sm">Pricing Model</span>
-                  <span className="text-green-400 font-bold text-sm">$9.99/month</span>
+                  <span className="text-green-400 font-bold text-sm">$9.99/month early bird</span>
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="text-slate-300 text-sm">Target Users</span>

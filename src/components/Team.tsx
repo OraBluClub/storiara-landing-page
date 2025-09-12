@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Linkedin } from 'lucide-react'
+import { Linkedin, Instagram } from 'lucide-react'
 import Image from 'next/image'
 import { getAssetPath } from '@/lib/utils'
 
@@ -10,21 +10,22 @@ const Team = () => {
         {
       name: "Nick Harty",
       role: "Technical Lead",
-      bio: "Full-stack engineer and technical architect leading the development of innovative film production tools. Passionate about bridging technology and creativity.",
+      bio: "Technical architect and full-stack engineer building the core AI systems that power Storiara. Passionate about creating technology that enhances creative workflows.",
       image: "/profiles/nickharty.jpeg",
-      linkedin: "https://www.linkedin.com/in/nicksheaharty/"
+      linkedin: "https://www.linkedin.com/in/nicksheaharty/",
+      instagram: "https://instagram.com/nicksheaharty"
     },
     {
       name: "Spencer Kaufman", 
-      role: "CRSO, BizDev",
-      bio: "Chief Revenue & Strategy Officer driving business development and strategic partnerships. Expert in scaling creative technology companies.",
+      role: "Revenue & Strategy Lead",
+      bio: "Revenue and strategy expert focused on growing Storiara's market presence and building partnerships with filmmakers and studios worldwide.",
       image: "/profiles/spencer.jpeg",
       linkedin: "https://www.linkedin.com/in/spencerkaufman720/"
     },
     {
       name: "Charles Hirschhorn",
-      role: "CFO", 
-      bio: "Chief Financial Officer with extensive experience in media and technology companies. Ensures financial strategy aligns with our mission to revolutionize film production.",
+      role: "Financial Lead", 
+      bio: "Financial strategist with deep experience in media and technology. Ensures Storiara's financial health while supporting our mission to transform film production.",
       image: "/profiles/charles.jpeg",
       linkedin: "https://www.linkedin.com/in/charlie-hirschhorn/"
     }
@@ -93,7 +94,7 @@ const Team = () => {
                 {member.bio}
               </p>
               
-              <div className="flex justify-center">
+              <div className="flex justify-center space-x-2">
                 <motion.a
                   href={member.linkedin}
                   target="_blank"
@@ -104,6 +105,18 @@ const Team = () => {
                 >
                   <Linkedin className="h-5 w-5" />
                 </motion.a>
+                {member.instagram && (
+                  <motion.a
+                    href={member.instagram}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    whileHover={{ scale: 1.1, y: -2 }}
+                    whileTap={{ scale: 0.9 }}
+                    className="p-2 rounded-lg bg-slate-800/30 hover:bg-pink-600/10 text-slate-500 hover:text-pink-400 transition-all duration-300 group/link"
+                  >
+                    <Instagram className="h-5 w-5" />
+                  </motion.a>
+                )}
               </div>
             </motion.div>
           ))}

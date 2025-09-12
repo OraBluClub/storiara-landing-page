@@ -31,16 +31,17 @@ const Pricing = () => {
     {
       name: "Pro",
       price: "$9.99",
+      originalPrice: "$19.99",
       period: "/month",
       description: "Unlock the full power of Storiara for professional results",
       popular: true,
+      earlyBird: true,
       features: [
         "Everything in Free",
         "Unlimited stories",
         "1,000 AI calls per month",
         "AI Character Image Generation",
         "AI Storyboard Generation",
-        "AI Logo & Poster Creation",
         "Advanced Budgeting Tools",
         "Priority support"
       ],
@@ -66,7 +67,7 @@ const Pricing = () => {
       ],
       limitations: [],
       buttonText: "Contact Sales",
-      buttonLink: "mailto:sales@storiara.com"
+      buttonLink: "mailto:storiaraCRSO@gmail.com"
     }
   ]
 
@@ -124,7 +125,7 @@ const Pricing = () => {
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
                   <div className="bg-gradient-to-r from-primary to-primary-dark text-white px-4 py-2 rounded-full text-sm font-semibold flex items-center">
                     <TrendingUp className="h-4 w-4 mr-1" />
-                    Most Popular
+                    {plan.earlyBird ? "Early Bird" : "Most Popular"}
                   </div>
                 </div>
               )}
@@ -137,6 +138,13 @@ const Pricing = () => {
                   {plan.description}
                 </p>
                 <div className="mb-4">
+                  {plan.originalPrice && (
+                    <div className="mb-2">
+                      <span className="text-2xl text-slate-500 line-through">
+                        {plan.originalPrice}
+                      </span>
+                    </div>
+                  )}
                   <span className="text-5xl font-bold bg-primary bg-clip-text text-transparent">
                     {plan.price}
                   </span>
