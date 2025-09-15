@@ -32,8 +32,8 @@ const Footer = () => {
       { name: 'Contact', href: 'mailto:storiaraCRSO@gmail.com' },
     ],
     Legal: [
-      { name: 'Privacy Policy', href: 'https://docs.google.com/document/d/1vlXMkqixBIiUM7J7ppdfu_yRQtIqMqZ7E8Bcyj8cHHw/edit?usp=sharing' },
-      { name: 'Terms of Service', href: 'https://docs.google.com/document/d/1gEXNtQLFng0QPa4iZi3o8kyLf37Prf6tTWq0rqE-OI8/edit?usp=sharing' },
+      { name: 'Privacy Policy', href: '/privacy' },
+      { name: 'Terms of Service', href: '/terms' },
     ]
   }
 
