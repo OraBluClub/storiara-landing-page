@@ -41,7 +41,7 @@ const PrivacyPolicy = () => {
               
               <section>
                 <p className="text-slate-300 leading-relaxed mb-8">
-                  At Storiara Inc., your privacy matters to us. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website, storiara.com (the "Site"). If you do not agree with the terms, please do not use the Site.
+                  At Storiara Inc., your privacy matters to us. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website, storiara.com (the &quot;Site&quot;). If you do not agree with the terms, please do not use the Site.
                 </p>
               </section>
 
@@ -170,7 +170,7 @@ const PrivacyPolicy = () => {
               </section>
 
               <section>
-                <h2 className="text-2xl font-bold text-slate-100 mb-4">8. Children's Privacy</h2>
+                <h2 className="text-2xl font-bold text-slate-100 mb-4">8. Children&apos;s Privacy</h2>
                 <p className="text-slate-300">Our Site is not intended for users under 13 (or the applicable age in your region). We do not knowingly collect personal data from children without parental consent.</p>
               </section>
 
@@ -181,7 +181,7 @@ const PrivacyPolicy = () => {
 
               <section>
                 <h2 className="text-2xl font-bold text-slate-100 mb-4">10. Changes to This Policy</h2>
-                <p className="text-slate-300">We may update this Privacy Policy periodically. Changes will be indicated by the updated "Effective Date" above. Continued use of the Site signifies your acceptance.</p>
+                <p className="text-slate-300">We may update this Privacy Policy periodically. Changes will be indicated by the updated &quot;Effective Date&quot; above. Continued use of the Site signifies your acceptance.</p>
               </section>
 
               <section>

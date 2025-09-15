@@ -41,10 +41,10 @@ const TermsOfService = () => {
               
               <section>
                 <p className="text-slate-300 leading-relaxed mb-8">
-                  These Terms and Conditions ("Terms") govern your use of the website operated by Storiara Inc. ("Storiara", "we", "our", or "us").
+                  These Terms and Conditions (&quot;Terms&quot;) govern your use of the website operated by Storiara Inc. (&quot;Storiara&quot;, &quot;we&quot;, &quot;our&quot;, or &quot;us&quot;).
                 </p>
                 <p className="text-slate-300 leading-relaxed mb-8">
-                  By accessing or using this site (the "Site"), you agree to be bound by these Terms. If you do not agree, please do not use the Site.
+                  By accessing or using this site (the &quot;Site&quot;), you agree to be bound by these Terms. If you do not agree, please do not use the Site.
                 </p>
               </section>
 
@@ -81,7 +81,7 @@ const TermsOfService = () => {
               <section>
                 <h2 className="text-2xl font-bold text-slate-100 mb-4">4. User Content</h2>
                 <p className="text-slate-300 mb-2">
-                  If you submit content to the Site—such as stories, feedback, or comments ("User Content")—you retain full ownership of all rights to that content. By uploading or submitting content, you grant Storiara a limited license to process and display that content only within your private project workspace for the purpose of providing our services (e.g., AI breakdowns, scheduling, visualization, collaboration features).
+                  If you submit content to the Site—such as stories, feedback, or comments (&quot;User Content&quot;)—you retain full ownership of all rights to that content. By uploading or submitting content, you grant Storiara a limited license to process and display that content only within your private project workspace for the purpose of providing our services (e.g., AI breakdowns, scheduling, visualization, collaboration features).
                 </p>
                 <p className="text-slate-300 mb-2">
                   We will never publish, distribute, or share your content publicly or with third parties without your explicit permission. You confirm that you have the rights to use and submit any content you upload.
@@ -116,7 +116,7 @@ const TermsOfService = () => {
               <section>
                 <h2 className="text-2xl font-bold text-slate-100 mb-4">8. Disclaimers</h2>
                 <p className="text-slate-300">
-                  The Site is provided "as is" and "as available" with no warranties, express or implied. We do not guarantee accuracy, reliability, or continuous availability.
+                  The Site is provided &quot;as is&quot; and &quot;as available&quot; with no warranties, express or implied. We do not guarantee accuracy, reliability, or continuous availability.
                 </p>
               </section>
 
@@ -144,7 +144,7 @@ const TermsOfService = () => {
               <section>
                 <h2 className="text-2xl font-bold text-slate-100 mb-4">12. Changes to the Terms</h2>
                 <p className="text-slate-300">
-                  We may update these Terms periodically. When we do, we'll update the "Effective Date" above. Continued use of the Site implies acceptance of the updated Terms.
+                  We may update these Terms periodically. When we do, we&apos;ll update the &quot;Effective Date&quot; above. Continued use of the Site implies acceptance of the updated Terms.
                 </p>
               </section>
 
