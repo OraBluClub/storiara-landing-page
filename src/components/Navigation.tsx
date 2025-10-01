@@ -36,7 +36,7 @@ const Navigation = () => {
 
   const navItems = [
     { name: 'Features', href: '/#features', hasDropdown: true, dropdown: featuresDropdown },
-    { name: "Built For", href: '/#platform', hasDropdown: true, dropdown: audienceDropdown },
+    { name: "Who We're For", href: '/#platform', hasDropdown: true, dropdown: audienceDropdown },
     { name: 'Team', href: '/#team' },
     { name: 'Pricing', href: '/#pricing' },
     { name: 'FAQ', href: '/#faq' },
