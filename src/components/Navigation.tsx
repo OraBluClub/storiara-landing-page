@@ -93,7 +93,7 @@ const Navigation = () => {
                         className="absolute top-full left-0 mt-3 w-72 bg-black/95 border border-primary/30 rounded-xl shadow-2xl shadow-primary/20 overflow-hidden z-[60]"
                       >
                         <div className="p-1.5">
-                          {item.dropdown?.map((dropItem, idx) => (
+                          {item.dropdown?.map((dropItem) => (
                             <Link
                               key={dropItem.name}
                               href={dropItem.href}
@@ -176,7 +176,7 @@ const Navigation = () => {
                         className="absolute top-full left-0 mt-3 w-72 bg-black/95 border border-primary/30 rounded-xl shadow-2xl shadow-primary/20 overflow-hidden z-[60]"
                       >
                         <div className="p-1.5">
-                          {item.dropdown?.map((dropItem, idx) => (
+                          {item.dropdown?.map((dropItem) => (
                             <Link
                               key={dropItem.name}
                               href={dropItem.href}
