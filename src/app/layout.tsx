@@ -8,15 +8,15 @@ const dmSans = DM_Sans({
 })
 
 export const metadata = {
-  title: 'Storiara - Script to Screen Pre-Production',
-  description: 'With just your script, we instantly break down plotholes, map characters, manage cast, track gear, build shotlists, schedule scenes, and craft your visual style.',
+  title: 'Storiara - From Script to Shoot',
+  description: 'From script to shoot, we get your story made. Cut pre-production time by 70% with AI-powered scheduling, budgeting, storyboarding, and coordination.',
   icons: {
     icon: '/icons/iconfull.svg',
     apple: '/icons/iconfull.svg',
   },
   openGraph: {
-    title: 'Storiara - Script to Screen Pre-Production',
-    description: 'With just your script, we instantly break down plotholes, map characters, manage cast, track gear, build shotlists, schedule scenes, and craft your visual style.',
+    title: 'Storiara - From Script to Shoot',
+    description: 'From script to shoot, we get your story made. Cut pre-production time by 70% with AI-powered scheduling, budgeting, storyboarding, and coordination.',
     url: 'https://storiara.com',
     siteName: 'Storiara',
     locale: 'en_US',

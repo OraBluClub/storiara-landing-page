@@ -2,12 +2,16 @@
 
 import { motion } from 'framer-motion'
 import { 
-  Bot,
+  FileText,
+  MapPin, 
   Users, 
-  Calendar, 
-  Palette,
-  Sparkles,
-  Clapperboard
+  Shirt,
+  Wrench,
+  ListChecks,
+  Calendar,
+  Megaphone,
+  DollarSign,
+  Swords
 } from 'lucide-react'
 import Image from 'next/image'
 import { getAssetPath } from '@/lib/utils'
@@ -15,75 +19,123 @@ import { getAssetPath } from '@/lib/utils'
 const Features = () => {
   const features = [
     {
-      title: "Agentic Script Analysis",
-      description: "Our core engine reads any script format and instantly extracts key elements, creating a structured foundation for your entire project.",
-      icon: Bot,
+      title: "Script & Story",
+      description: "Upload any script format and instantly create a structured narrative foundation. AI analyzes your story, identifies plot holes, and generates comprehensive outlines.",
+      icon: FileText,
       image: getAssetPath('features/ai-script.png'),
       items: [
         "Automated scene & setting extraction",
-        "Character and dialogue identification", 
-        "Plot consistency analysis",
-        "Logline & synopsis generation"
+        "Character and dialogue mapping", 
+        "Plot consistency & hole detection",
+        "Narrative outline generation"
       ]
     },
     {
-      title: "AI-Powered Pre-Production",
-      description: "Generate a complete pre-production package in minutes. From characters to budgets, let AI handle the heavy lifting.",
-      icon: Sparkles,
+      title: "Locations",
+      description: "Organize and manage all your shooting locations in one place. Track availability, costs, and logistical requirements for every scene.",
+      icon: MapPin,
       image: getAssetPath('features/ai-pre-production.png'),
       items: [
-        "Character descriptions & backstories",
-        "Budget estimates based on script elements",
-        "Equipment & crew role suggestions",
-        "Detailed scene breakdowns"
+        "Location database & scouting notes",
+        "Scene-to-location mapping",
+        "Contact & permit tracking",
+        "Distance & logistics planning"
       ]
     },
     {
-      title: "Generative Visuals",
-      description: "Bring your vision to life before you even start shooting. Create concept art, storyboards, and marketing materials with AI.",
-      icon: Palette,
-      image: getAssetPath('features/ai-visuals.png'),
+      title: "Cast & Crew",
+      description: "Manage your entire team from leads to background actors. Track availability, contact info, and role assignments with ease.",
+      icon: Users,
+      image: getAssetPath('features/ai-workspace.png'),
       items: [
-        "AI Character Image Generation",
-        "AI Storyboard Generation (Image & Video)",
-        "AI Logo & Poster Creation",
-        "Color scheme generation"
+        "Digital talent roster",
+        "Availability calendars",
+        "Contact management",
+        "Role & department assignments"
       ]
     },
     {
-      title: "Intelligent Scheduling",
-      description: "Develop comprehensive shot lists and shooting schedules. Organize your production with smart, integrated tools.",
+      title: "Props & Wardrobe",
+      description: "Keep track of every costume piece and prop needed for your production. Organize by scene, character, and department.",
+      icon: Shirt,
+      image: getAssetPath('features/ai-pre-production.png'),
+      items: [
+        "Wardrobe inventory & tracking",
+        "Props list & scene breakdown",
+        "Continuity photo management",
+        "Rental & purchase tracking"
+      ]
+    },
+    {
+      title: "Equipment",
+      description: "Manage all your camera gear, lighting, and technical equipment. Track rentals, availability, and assignments across shoot days.",
+      icon: Wrench,
+      image: getAssetPath('features/ai-toolkit.png'),
+      items: [
+        "Equipment inventory & specs",
+        "Rental schedule management",
+        "Technical requirements per scene",
+        "Gear list generation"
+      ]
+    },
+    {
+      title: "Shotlist Development",
+      description: "Build comprehensive shot lists with AI assistance. Organize by scene, camera setup, and shooting priority for maximum efficiency.",
+      icon: ListChecks,
+      image: getAssetPath('features/ai-scheduling.png'),
+      items: [
+        "AI-suggested shot compositions",
+        "Scene-by-scene breakdowns",
+        "Camera angle & movement notes",
+        "Shot priority & dependencies"
+      ]
+    },
+    {
+      title: "Scheduling",
+      description: "Create optimized shooting schedules that save time and money. Balance cast availability, locations, and equipment with intelligent automation.",
       icon: Calendar,
       image: getAssetPath('features/ai-scheduling.png'),
       items: [
-        "Automated shot list creation",
-        "Cast & crew availability management",
+        "Automated schedule optimization",
+        "Cast & crew availability sync",
         "Location & equipment coordination",
         "PDF call sheet generation"
       ]
     },
     {
-      title: "Collaborative Workspace",
-      description: "A centralized hub for your entire team. Keep everyone on the same page, from writers to producers and department heads.",
-      icon: Users,
+      title: "Announcements",
+      description: "Keep your entire team informed and coordinated. Send instant messages, call sheets, and updates directly to cast and crew.",
+      icon: Megaphone,
       image: getAssetPath('features/ai-workspace.png'),
       items: [
-        "Shared project access",
-        "Real-time updates",
-        "Role-based permissions",
-        "Centralized document storage"
+        "Send call sheets to cast & crew",
+        "Broadcast important messages",
+        "Track message delivery & reads",
+        "Scheduled announcements"
       ]
     },
     {
-      title: "Full Production Toolkit",
-      description: "Beyond pre-production, Storiara supports your project through to the final cut with integrated on-set and post-production tools.",
-      icon: Clapperboard,
-      image: getAssetPath('features/ai-toolkit.png'),
+      title: "Budget & Targets",
+      description: "Track production costs in real-time and stay on budget. Get AI-powered estimates for every aspect of your production.",
+      icon: DollarSign,
+      image: getAssetPath('features/ai-pre-production.png'),
       items: [
-        "On-set notetaking & continuity",
-        "Editing software integration hooks",
-        "Marketing & distribution planning",
-        "Complete asset management"
+        "Budget estimates from script",
+        "Real-time expense tracking",
+        "Department-wise allocations",
+        "Cost-saving recommendations"
+      ]
+    },
+    {
+      title: "Storyboarding",
+      description: "Bring your creative vision to life with AI-generated imagery. Create storyboards, mood boards, and visual references before you shoot.",
+      icon: Swords,
+      image: getAssetPath('features/ai-visuals.png'),
+      items: [
+        "AI character image generation",
+        "AI storyboard creation (image & video)",
+        "Mood board & reference library",
+        "Visual style development"
       ]
     }
   ]
@@ -115,7 +167,7 @@ const Features = () => {
         >
           <h2 className="text-4xl md:text-6xl font-bold mb-6">
             <span className="bg-gradient-to-b from-primary-foreground to-primary bg-clip-text text-transparent">
-              Your Instant Production Plan
+              Everything You Need, Nothing You Don't
             </span>
           </h2>
           <p className="text-xl text-slate-400 max-w-3xl mx-auto">
@@ -203,16 +255,17 @@ const Features = () => {
             <motion.div
               className="flex items-center"
               animate={{
-                x: ['0%', '-100%'],
+                x: ['0%', '-50%'],
               }}
               transition={{
                 ease: 'linear',
                 duration: 60,
                 repeat: Infinity,
+                repeatType: 'loop',
               }}
             >
-              {/* Render logos twice for seamless loop */}
-              {[...integrations, ...integrations].map((logo, index) => (
+              {/* Render logos 4 times for truly seamless infinite loop */}
+              {[...integrations, ...integrations, ...integrations, ...integrations].map((logo, index) => (
                 <div key={index} className="flex-shrink-0 mx-8" style={{ width: '100px' }}>
                   <Image
                     src={logo.src}

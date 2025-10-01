@@ -97,7 +97,7 @@ const Pricing = () => {
         >
           <h2 className="text-4xl md:text-6xl font-bold mb-6">
             <span className="bg-gradient-to-b from-primary-foreground to-primary bg-clip-text text-transparent">
-              Pricing That Fits Your Vision
+              Start Free, Scale As You Grow
             </span>
           </h2>
           <p className="text-xl text-slate-400 max-w-3xl mx-auto">

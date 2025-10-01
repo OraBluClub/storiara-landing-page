@@ -57,7 +57,7 @@ const Hero = () => {
         className="object-cover  "
       />
       </motion.div>
-      <div className="pt-40 pb-5 flex items-center justify-center overflow-hidden">
+      <div className="pt-32 pb-5 flex items-center justify-center overflow-hidden">
         {/* Dark mysterious background with blue glow from top */}
         <motion.div 
           style={{ }}
@@ -96,13 +96,27 @@ const Hero = () => {
 
         {/* Main Content */}
         <div className="relative z-10 max-w-6xl w-full max-w-full mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          {/* Badge */}
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+            className="flex justify-center mb-4"
+          >
+            <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary/15 border border-primary/40 backdrop-blur-sm">
+              <span className="text-xs md:text-sm font-medium text-slate-300">
+                Used by over <span className="font-bold text-white bg-primary/30 px-2 py-0.5 rounded-md">15K+</span> filmmakers worldwide
+              </span>
+            </div>
+          </motion.div>
+
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.5 }}
             className="perspective-2000"
           >
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-8 transform-style-3d break-words whitespace-normal">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 transform-style-3d break-words whitespace-normal">
               <motion.span 
                 className="block bg-gradient-to-r from-primary-foreground to-primary bg-clip-text text-transparent"
                 initial={{ opacity: 0, x: -100 }}
@@ -126,9 +140,9 @@ const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 2 }}
-            className="text-xl md:text-2xl text-slate-400 mb-12 max-w-4xl mx-auto leading-relaxed break-words whitespace-normal"
+            className="text-lg md:text-xl text-slate-400 mb-8 max-w-4xl mx-auto leading-relaxed break-words whitespace-normal"
           >
-            Built by filmmakers, for filmmakers. With just your script, we instantly break down plotholes, map characters, manage cast, track gear, build shotlists, schedule scenes, and craft your visual style.
+            Built by filmmakers, for filmmakers. Upload your script and cut pre-production time by 70%—instantly break down scenes, manage cast and crew, build shotlists, and craft your visual style. <span className="text-primary font-semibold">Save thousands in production costs.</span>
           </motion.p>
 
           <motion.div
@@ -149,7 +163,7 @@ const Hero = () => {
                   className="flex items-center"
                 >
                   <Upload className="mr-2 h-6 w-6 group-hover:animate-pulse" />
-                  Upload & Start for Free
+                  Start Free
                 </motion.div>
               </Link>
             </Button>
@@ -173,27 +187,28 @@ const Hero = () => {
         
           {/* Logo Ticker */}
          <motion.div
-            className="mt-10 w-full"
+            className="mt-8 w-full"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 3 }}
           >
-            <p className="text-sm text-slate-400 mb-6">
+            <p className="text-sm text-slate-400 mb-4">
               Advised by industry leaders from
             </p>
             <div className="relative w-full overflow-hidden mask-image-gradient">
               <motion.div
                 className="flex"
                 animate={{
-                  x: ['0%', '-100%'],
+                  x: ['0%', '-50%'],
                 }}
                 transition={{
                   ease: 'linear',
                   duration: 25,
                   repeat: Infinity,
+                  repeatType: 'loop',
                 }}
               >
-                {[...logos, ...logos].map((logo, index) => (
+                {[...logos, ...logos, ...logos, ...logos].map((logo, index) => (
                   <div key={index} className="flex-shrink-0 mx-10" style={{ width: '120px' }}>
                     <Image
                       src={logo.src}
