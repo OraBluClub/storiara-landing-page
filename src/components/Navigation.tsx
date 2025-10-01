@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Button } from '@/components/ui/button'
-import { Menu, X, PenTool, Clapperboard, ChevronDown, FileText, Calendar, Swords, DollarSign, ListChecks, GraduationCap, Video, Building2 } from 'lucide-react'
+import { Menu, X, PenTool, Clapperboard, ChevronDown, FileText, Calendar, Swords, DollarSign, GraduationCap, Video, Building2 } from 'lucide-react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { getAssetPath } from '@/lib/utils'

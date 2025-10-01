@@ -61,7 +61,7 @@ const Platform = () => {
             </span>
           </h2>
           <p className="text-xl text-slate-400 max-w-3xl mx-auto">
-            From student sets to studio slates, <span className="text-primary font-semibold">Storiara scales with your ambitions.</span> Professional production tools that grow with you—whether you're making your first short or managing a multi-million dollar slate.
+            From student sets to studio slates, <span className="text-primary font-semibold">Storiara scales with your ambitions.</span> Professional production tools that grow with you—whether you&apos;re making your first short or managing a multi-million dollar slate.
           </p>
         </motion.div>
 
