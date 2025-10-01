@@ -97,7 +97,7 @@ const Hero = () => {
         {/* Main Content */}
         <div className="relative z-10 max-w-6xl w-full max-w-full mx-auto px-4 sm:px-6 lg:px-8 text-center">
           {/* Badge */}
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
@@ -108,7 +108,7 @@ const Hero = () => {
                 Used by over <span className="font-bold text-white bg-primary/30 px-2 py-0.5 rounded-md">15K+</span> filmmakers worldwide
               </span>
             </div>
-          </motion.div>
+          </motion.div> */}
 
           <motion.div
             initial={{ opacity: 0, y: 50 }}
